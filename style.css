@@ -1,0 +1,1073 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Gotham Pro;
+  src: url(GothamPro/GothamPro.ttf);
+}
+h2 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+h3 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  display: flex;
+  align-items: flex-end;
+  color: #FBFBFB;
+}
+h4 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #3B2D40;
+}
+h5 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.show {
+  opacity: 1 !important;
+  transition-duration: 0.3s !important;
+}
+.none {
+  opacity: 0 !important;
+  transition-duration: 0.3s !important;
+}
+.fadeOut {
+  display: none !important;
+}
+.fadeIn {
+  display: block !important;
+}
+.wrapp {
+  max-width: 375px;
+  height: auto;
+}
+.wrapp .content {
+  width: 100%;
+  height: auto;
+}
+.wrapp .content .start-screen {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(images/screen1/1.jpg);
+  position: relative;
+  opacity: 1;
+  transition-duration: 0;
+}
+.wrapp .content .start-screen .logo {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  top: 45%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(images/screen1/L_2\,3\ 1.png);
+}
+.wrapp .content .start-screen .btn {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 5%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapp .content .start-screen .btn button {
+  display: block;
+  width: 280px;
+  height: 60px;
+  background-color: #3C134A;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-image: url(images/screen1/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .start-screen .btn button:focus {
+  outline: none;
+}
+.wrapp .content .start-screen .btn button:hover {
+  background-color: #FF6394;
+}
+.wrapp .content .login-screen {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: linear-gradient(343.67deg, #7A5DB8 -2.15%, #FF6394 48.14%, #C34DB2 94.75%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+}
+.wrapp .content .login-screen .text-main {
+  padding: 40px 20px 0 20px;
+  z-index: 1;
+}
+.wrapp .content .login-screen .text-main .data {
+  margin: 10px 0 0;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.wrapp .content .login-screen .text-main .form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: relative;
+  z-index: 10;
+}
+.wrapp .content .login-screen .text-main .form .text {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #3C134A;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+.wrapp .content .login-screen .text-main .form .radio {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3C134A;
+}
+.wrapp .content .login-screen .text-main .form .radio #men {
+  padding: 0 25px 0 35px;
+}
+.wrapp .content .login-screen .text-main .form .radio #women {
+  padding: 0 0 0 30px;
+}
+.wrapp .content .login-screen .text-main .form .radio input[type=radio] {
+  display: none;
+}
+.wrapp .content .login-screen .text-main .form .radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.wrapp .content .login-screen .text-main .form .radio label:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-image: url(images/screen2/off.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapp .content .login-screen .text-main .form .radio input[type=radio]:checked + label:before {
+  background: url(images/screen2/on.png);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.wrapp .content .login-screen .text-main .form .radio label:hover:before {
+  filter: brightness(120%);
+}
+.wrapp .content .login-screen .text-main .form .radio input[type=radio]:disabled + label:before {
+  filter: grayscale(100%);
+}
+.wrapp .content .login-screen .text-main .form .cal {
+  display: inline-block;
+  width: 100%;
+  height: 49px;
+  margin: 0 auto;
+  border: 1px solid #3C134A;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: transparent;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3C134A;
+  padding: 8px 14px 8px 11px;
+}
+.wrapp .content .login-screen .text-main .form .cal:focus {
+  outline: none;
+}
+.wrapp .content .login-screen .btn-bg {
+  position: absolute;
+  left: 0;
+  background-position: center bottom;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 230px;
+  bottom: 0;
+  background-size: cover;
+  background-image: url(images/screen1/Intersect.png);
+}
+.wrapp .content .login-screen .btn {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  bottom: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.wrapp .content .login-screen .btn button {
+  display: block;
+  width: 280px;
+  height: 60px;
+  background-color: #3C134A;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-image: url(images/screen1/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .login-screen .btn button:focus {
+  outline: none;
+}
+.wrapp .content .login-screen .btn button:hover {
+  background-color: #FF6394;
+}
+.wrapp .content .trainings-screen {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  overflow-y: scroll background-position: center center; background-repeat: no-repeat;;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+}
+.wrapp .content .trainings-screen .content {
+  height: 100vh;
+  min-height: 666px;
+  background: linear-gradient(343.67deg, #7A5DB8 -2.15%, #FF6394 48.14%, #C34DB2 94.75%);
+}
+.wrapp .content .trainings-screen .content .content-traing {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapp .content .trainings-screen .content .content-traing .text {
+  padding-left: 20px;
+  width: 280px;
+}
+.wrapp .content .trainings-screen .content .content-traing .libr {
+  width: 32px;
+  height: 32px;
+  background-image: url(images/slider/library.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+}
+.wrapp .content .trainings-screen .content .swiper-container {
+  width: 375px;
+}
+.wrapp .content .trainings-screen .content .swiper-wrapper {
+  width: 750px;
+}
+.wrapp .content .trainings-screen .content .swiper-slide {
+  height: 530px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0 !important;
+  margin-left: 20px;
+}
+.wrapp .content .trainings-screen .content .swiper-slide .img-one,
+.wrapp .content .trainings-screen .content .swiper-slide .img-two,
+.wrapp .content .trainings-screen .content .swiper-slide .img-thrird {
+  width: 240px;
+  height: 480px;
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.wrapp .content .trainings-screen .content .swiper-slide .img-one {
+  background-image: url(images/slider/1.png);
+  position: relative;
+}
+.wrapp .content .trainings-screen .content .swiper-slide .img-one .name-traning {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+}
+.wrapp .content .trainings-screen .content .swiper-slide .img-one .name-traning p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FF6394;
+  padding: 0 0 12px 16px;
+}
+.wrapp .content .trainings-screen .content .swiper-slide .img-one .name-traning h5 {
+  padding-left: 12px;
+  border-left: 4px solid #fff;
+}
+.wrapp .content .trainings-screen .content .swiper-slide .img-two {
+  background-image: url(images/slider/1.png);
+}
+.wrapp .content .trainings-screen .content .swiper-slide .img-thrird {
+  background-image: url(images/slider/1.png);
+}
+.wrapp .content .trainings-screen .content .swiper-slide:nth-child(2) {
+  margin-left: 25px;
+}
+.wrapp .content .trainings-screen .content .swiper-slide:nth-child(3) {
+  margin-left: 30px;
+}
+.wrapp .content .trainings-screen .content .swiper-slide:nth-child(5) {
+  background-color: transparent;
+}
+.wrapp .content .functional-screen {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow-y: scroll background-position: center center; background-repeat: no-repeat;;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+}
+.wrapp .content .functional-screen .top {
+  width: 100%;
+  height: 340px;
+  background-image: url(images/screen3/1.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+.wrapp .content .functional-screen .top-btn {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapp .content .functional-screen .top-btn__left {
+  width: 67px;
+  height: 32px;
+  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .functional-screen .top-btn__left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .functional-screen .top-btn__right {
+  width: 33px;
+  height: 33px;
+  background-image: url(images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .functional-screen .top-text {
+  padding: 90px 20px 10px 20px;
+}
+.wrapp .content .functional-screen .top-table {
+  width: 300px;
+  height: 35px;
+  margin: 0 50px auto 18px;
+}
+.wrapp .content .functional-screen .top-table table {
+  text-align: left;
+}
+.wrapp .content .functional-screen .top-table table tr {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.wrapp .content .functional-screen .top-table table tr th:nth-child(odd) {
+  padding: 0 20px;
+}
+.wrapp .content .functional-screen .top-table table tr th:nth-child(even) {
+  padding: 0;
+  width: 1px;
+  background-color: rgba(251, 251, 251, 0.4);
+}
+.wrapp .content .functional-screen .top-table table tr th:nth-child(1) {
+  padding-left: 0 !important;
+}
+.wrapp .content .functional-screen .top-table table tr th:nth-child(5) {
+  padding-right: 0 !important;
+}
+.wrapp .content .functional-screen .content {
+  width: 100%;
+  height: auto;
+}
+.wrapp .content .functional-screen .content .text-header {
+  padding: 35px 20px 0;
+}
+.wrapp .content .functional-screen .content .text-header p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #691686;
+}
+.wrapp .content .functional-screen .content .text-up {
+  padding: 12px 20px 24px;
+}
+.wrapp .content .functional-screen .content .text-center {
+  padding: 24px 20px;
+  background-color: #F5E5EB;
+}
+.wrapp .content .functional-screen .content .text-center h4 {
+  color: #220B2B !important;
+}
+.wrapp .content .functional-screen .content .text-bottom_header {
+  padding: 24px 20px 12px;
+}
+.wrapp .content .functional-screen .content .text-bottom_header p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #3B2D40;
+}
+.wrapp .content .functional-screen .content .text-ul {
+  padding: 0 20px 45px 37px;
+}
+.wrapp .content .functional-screen .content .text-ul ul {
+  list-style: none;
+}
+.wrapp .content .functional-screen .content .text-ul ul li {
+  padding-bottom: 25px;
+}
+.wrapp .content .functional-screen .content .text-ul ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background-color: #FF6394;
+  border-radius: 50%;
+  margin-left: -17px;
+  margin-top: 7px;
+}
+.wrapp .content .functional-screen .content .btn {
+  width: 375px;
+  height: 108px;
+  background-image: url(images/screen3/bottom.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapp .content .functional-screen .content .btn-left {
+  width: 67px;
+  height: 32px;
+  background-image: url(images/screen3/Vector.png);
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 20px;
+}
+.wrapp .content .functional-screen .content .btn-left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #3C134A;
+  position: relative;
+  right: -23px;
+  border-right: 2px solid #3C134A;
+}
+.wrapp .content .functional-screen .content .btn-right {
+  width: 233px;
+  height: inherit;
+  background-image: url(images/screen3/forward.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+}
+.wrapp .content .functional-screen .content .btn-right p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  color: #3C134A;
+  position: absolute;
+  right: 90px;
+  top: 40px;
+}
+.wrapp .content .guestionChips-screen {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll background-position: center center; background-repeat: no-repeat;;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+  background: url(images/guestionChips/1.png) no-repeat center top;
+  background-size: cover;
+}
+.wrapp .content .guestionChips-screen .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapp .content .guestionChips-screen .content-top {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+.wrapp .content .guestionChips-screen .content-top__left {
+  width: 67px;
+  height: 32px;
+  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .guestionChips-screen .content-top__left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .guestionChips-screen .content-top__right {
+  width: 33px;
+  height: 33px;
+  background-image: url(images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .guestionChips-screen .content .bg {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.wrapp .content .guestionChips-screen .content .content-text h3 {
+  position: absolute;
+  bottom: 110px;
+  left: 0;
+  padding: 0 0 0 20px;
+}
+.wrapp .content .guestionChips-screen .content .content-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapp .content .guestionChips-screen .content .content-btn button {
+  margin: 0 7px;
+  width: 160px;
+  height: 60px;
+  background: #FF6394;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  border: none;
+}
+.wrapp .content .guestionChips-screen .content .content-btn button:focus {
+  outline: none;
+}
+.wrapp .content .guestionChips-no {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll background-position: center center; background-repeat: no-repeat;;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+}
+.wrapp .content .guestionChips-no .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapp .content .guestionChips-no .content-top {
+  width: 100%;
+  height: 340px;
+  background: url(images/answerСhips/1.png) center top no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.wrapp .content .guestionChips-no .content-top .btn {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapp .content .guestionChips-no .content-top .btn-left {
+  width: 67px;
+  height: 32px;
+  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .guestionChips-no .content-top .btn-left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .guestionChips-no .content-top .btn-right {
+  width: 33px;
+  height: 33px;
+  background-image: url(images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .guestionChips-no .content-top .header {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+}
+.wrapp .content .guestionChips-no .content-top .header p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FBFBFB;
+  padding: 0 20px;
+}
+.wrapp .content .guestionChips-no .content-main .text-header {
+  padding: 35px 20px 0;
+}
+.wrapp .content .guestionChips-no .content-main .text-header p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #691686;
+}
+.wrapp .content .guestionChips-no .content-main .text-up {
+  padding: 12px 20px 112px;
+}
+.wrapp .content .guestionChips-no .content-main .text-center {
+  padding: 24px 20px;
+  margin-bottom: 50px;
+  background-color: #F5E5EB;
+}
+.wrapp .content .guestionChips-no .content-main .text-center h4 {
+  color: #220B2B !important;
+}
+.wrapp .content .guestionChips-no .content-main .text .btn-bottom {
+  width: 100%;
+  height: 108px;
+  background: url(images/answerСhips/bottom.png) no-repeat right bottom;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapp .content .guestionChips-no .content-main .text .btn-bottom button {
+  width: 335px;
+  height: 60px;
+  background: #3C134A;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  border: none;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.wrapp .content .guestionChips-no .content-main .text .btn-bottom button:focus {
+  outline: none;
+}
+.wrapp .content .workout_01-screen {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll background-position: center center; background-repeat: no-repeat;;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+  background: url(images/workout_01/DSCF0827\ 2.png) no-repeat center bottom;
+  background-size: cover;
+}
+.wrapp .content .workout_01-screen .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapp .content .workout_01-screen .content .showTimerAndBtn {
+  background-color: transparent;
+  width: 100%;
+  height: 450px;
+  top: 100px;
+  position: absolute;
+}
+.wrapp .content .workout_01-screen .content-top {
+  width: 100%;
+  height: 340px;
+  background-size: contain;
+  position: relative;
+}
+.wrapp .content .workout_01-screen .content-top .btn {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapp .content .workout_01-screen .content-top .btn-left {
+  width: 67px;
+  height: 32px;
+  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .workout_01-screen .content-top .btn-left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .workout_01-screen .content-top .btn-right {
+  width: 33px;
+  height: 33px;
+  background-image: url(images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .workout_01-screen .content-timer {
+  position: absolute;
+  width: 120px;
+  height: 32px;
+  left: 128px;
+  top: 45px;
+  background: linear-gradient(269.5deg, #220B2B 0.26%, #3C134A 105.77%);
+  box-shadow: 0px 10px 20px 10px rgba(72, 25, 89, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapp .content .workout_01-screen .content-timer p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.wrapp .content .workout_01-screen .content-stop {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapp .content .workout_01-screen .content-stop button {
+  width: 335px;
+  height: 60px;
+  background: #3C134A;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  border: none;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  background: #FF6394 !important;
+}
+.wrapp .content .workout_01-screen .content-stop button:focus {
+  outline: none;
+}
+.wrapp .content .relax-screen,
+.wrapp .content .end-workout-screen {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll background-position: center center; background-repeat: no-repeat;;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+  background: url(images/blockRelax/1.png) no-repeat center bottom;
+  background-size: cover;
+}
+.wrapp .content .relax-screen .content,
+.wrapp .content .end-workout-screen .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapp .content .relax-screen .content-top,
+.wrapp .content .end-workout-screen .content-top {
+  width: 100%;
+  height: 340px;
+  background-size: contain;
+  position: relative;
+}
+.wrapp .content .relax-screen .content-top .btn,
+.wrapp .content .end-workout-screen .content-top .btn {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapp .content .relax-screen .content-top .btn-left,
+.wrapp .content .end-workout-screen .content-top .btn-left {
+  width: 67px;
+  height: 32px;
+  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .relax-screen .content-top .btn-left p,
+.wrapp .content .end-workout-screen .content-top .btn-left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .relax-screen .content-top .btn-right,
+.wrapp .content .end-workout-screen .content-top .btn-right {
+  width: 33px;
+  height: 33px;
+  background-image: url(images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .relax-screen .content-timer,
+.wrapp .content .end-workout-screen .content-timer {
+  position: absolute;
+  left: 0;
+  top: 254px;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapp .content .relax-screen .content-timer p,
+.wrapp .content .end-workout-screen .content-timer p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.wrapp .content .relax-screen .content-text,
+.wrapp .content .end-workout-screen .content-text {
+  position: absolute;
+  left: 20px;
+  bottom: 120px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wrapp .content .relax-screen .content-text p,
+.wrapp .content .end-workout-screen .content-text p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FBFBFB;
+}
+.wrapp .content .relax-screen .content-btn,
+.wrapp .content .end-workout-screen .content-btn {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapp .content .relax-screen .content-btn button,
+.wrapp .content .end-workout-screen .content-btn button {
+  width: 335px;
+  height: 60px;
+  background: #3C134A;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  border: none;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  background: #FF6394 !important;
+}
+.wrapp .content .relax-screen .content-btn button:focus,
+.wrapp .content .end-workout-screen .content-btn button:focus {
+  outline: none;
+}
+@media (max-height: 570px) {
+  .guestionChips-screen .content .bg .content-text h3 {
+    font-size: 20px !important;
+  }
+}
