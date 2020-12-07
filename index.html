@@ -186,12 +186,13 @@
                             <div class="btn-left back-guestionChipsNo"><p>Назад</p></div>
                             <div class="btn-right"></div>
                         </div>
-                    </div>    
-                    <div class="showTimerAndBtn">
-
                     </div>
+                    <video id="video_workout_01">
+                        <source src="./video/2.mp4" type="video/webm" codecs="vp8, vorbis">
+                    </video>
+                    <div class="showTimerAndBtn"></div>
                     <div class="content-timer none" id="timerWorkout_01">
-                        <p>32:12</p>
+                        <p id="timer_workout_01"><span id="min" data-min="0">00</span>:<span id="sec" data-sec="0">00</span></p>
                     </div>
                     <div class="content-stop none" id="btnWorkout_01">
                         <button id="bnt-relax_workout_01">Я устал</button>
@@ -207,13 +208,12 @@
                         </div>
                     </div>    
                     <div class="content-timer">
-                        <p>32:12</p>
-                    </div>
+                        <p id="timer_relax_workout_01"><span id="min_relax">00</span>:<span id="sec_relax">30</span></p>                    </div>
                     <div class="content-text">
                         <p>Отдохните!</p>
                     </div>
                     <div class="content-btn">
-                        <button id="backToWorkout_01">Продолжить</button>
+                        <button id="btn-backToWorkout_01">Продолжить</button>
                     </div>
                 </div>
             </div>
@@ -233,6 +233,24 @@
                     </div>
                     <div class="content-btn">
                         <button id="endWorkout_01">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="final-screen fadeOut">
+                <div class="content">
+                    <div class="content-top">
+                        <div class="content-top__left back-workout_01"><p>Назад</p></div>
+                        <div class="content-top__right"></div>
+                    </div>
+                    <div class="bg">
+                        <div class="content-text">
+                            <h3>Сегодня было жарко!<br>Спасибо за работу,<br>вы молодец!</h3>
+                            <p>Жду вас на следующей тренировке</p>
+                        </div>
+                        <div class="content-btn">
+                            <button class="back-workout_01" >Еще раз</button>
+                            <button id="final-workout_01">Закончить</button>
+                        </div>
                     </div>
                 </div>
             </div>

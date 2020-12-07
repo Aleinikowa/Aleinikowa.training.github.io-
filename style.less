@@ -637,7 +637,7 @@ h5 {
                 }
             }
         }
-        .guestionChips-screen {
+        .guestionChips-screen, .final-screen {
             width: 100%;
             height: 100vh;
             overflow-y: scroll
@@ -864,24 +864,34 @@ h5 {
             position: relative;
             opacity: 0;
             transition-duration: 0;
-            background: url(./images/workout_01/DSCF0827\ 2.png) no-repeat center bottom;
+            // background: url(./images/workout_01/DSCF0827\ 2.png) no-repeat center bottom;
             background-size: cover;
             .content {
                 width: 100%;
                 height: 100%;
                 position: relative;
+                video {
+                    display: block;
+                    width: 375px;
+                    height: 100%;
+                }
                 .showTimerAndBtn {
                     background-color: transparent;
                     width: 100%;
                     height: 450px;
                     top: 100px;
                     position: absolute;
+                    z-index: 20;
+                    // background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
                 }
                 &-top {
                     width: 100%;
-                    height: 340px;
+                    height: 100px;
                     background-size: contain;
-                    position: relative;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
                     .btn {
                         width: 325px;
                         height: 32px;
@@ -938,6 +948,7 @@ h5 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    z-index: 10px;
                     p {
                         font-family: Gotham Pro;
                         font-style: normal;
@@ -956,6 +967,7 @@ h5 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    z-index: 10;
                     button {
                         .btn-violet-big();
                         background: #FF6394 !important;
@@ -1083,7 +1095,33 @@ h5 {
                 }
             }
         }    
-        
+        .final-screen  {
+            background-image: url(./images/finalScreen/1.png) !important;
+            .content {
+                &-text {
+                    h3 {
+                        bottom: 175px !important;
+                    }
+                    p {
+                        position: absolute;
+                        bottom: 117px;
+                        left: 0;
+                        padding: 0 0 0 20px;
+                        font-family: Gotham Pro;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 120%;
+                        color: #FBFBFB;
+                    }
+                }
+                &-btn {
+                    button {
+                        width: 160px !important;
+                    }
+                }
+            }
+        }
     }
 }
 

@@ -16,17 +16,24 @@ let btnStart = document.getElementById('start'),
     textAnswerChops = document.getElementById('answerChips'),
     backtQuestionChipsScreen = document.getElementsByClassName('backt-guestionChipsScreen')[0],
     btnGoToWorkout_01 = document.getElementById('goToWorkout_01'),
+    timer_workout_01  =document.getElementById('timer_workout_01'),
     workout_01Screen =  document.getElementsByClassName('workout_01-screen')[0],
     btnBackQuestionChipsNo = document.getElementsByClassName('back-guestionChipsNo')[0],
     showTimerAndBtn_01 = document.getElementsByClassName('showTimerAndBtn')[0],
     timerWorkout_01 = document.getElementById('timerWorkout_01'),
     btnWorkout_01 = document.getElementById('btnWorkout_01'),
     bntRelaxWorkout_01 = document.getElementById('bnt-relax_workout_01'),
+    video_workout_01 = document.getElementById('video_workout_01'),
     relaxBlock = document.getElementsByClassName('relax-screen')[0],
+    timer_relax_workout_01 = document.getElementById('timer_relax_workout_01'),
     btnBackWorkout_01 = document.getElementsByClassName('back-workout_01')[0],
     btnBackWorkout_01_2 = document.getElementsByClassName('back-workout_01')[1],
+    btnBackWorkout_01_3 = document.getElementsByClassName('back-workout_01')[2],
+    btnBackWorkout_01_4 = document.getElementsByClassName('back-workout_01')[3],
+    btn_backToWorkout_01 = document.getElementById('btn-backToWorkout_01'),
     blockEndWorkout_01 = document.getElementsByClassName('end-workout-screen')[0];
-
+    btnEndWorkout_01 = document.getElementById('endWorkout_01'),
+    finalScreen = document.getElementsByClassName('final-screen')[0];
 
 btnStart.onclick = ()=> {
     startScreen.classList.add('none');
@@ -79,34 +86,128 @@ btnBlockFunctionalTraing.addEventListener('click', ()=>showNewBlock(functionalSc
 btnGoToQuestionChips.addEventListener('click', ()=>showNewBlock(guestionChipsScreen,functionalScreen));
 btnBacktFunctionalScreen.addEventListener('click', ()=>showNewBlock(functionalScreen,guestionChipsScreen));
 backtQuestionChipsScreen.addEventListener('click', ()=>showNewBlock(guestionChipsScreen,guestionChipsNo));
+
+//Workout_01
+let timerId,
+    sec = document.getElementById('sec'),
+    min = document.getElementById('min'),
+    seconds = +sec.dataset.sec,
+    minutes = +min.dataset.min,
+    timerIdRelax,
+    seconds_R = 30,
+    minutes_R = 0;
+
 btnGoToWorkout_01.addEventListener('click', ()=>showNewBlock(workout_01Screen,guestionChipsNo));
 
-btnGoToWorkout_01.addEventListener('click', () =>showEndlock(blockEndWorkout_01,workout_01Screen));
+btnBackWorkout_01.addEventListener('click', ()=>backToWorkout_01());
+btn_backToWorkout_01.addEventListener('click', ()=>backToWorkout_01());
+
+function backToWorkout_01() {
+    showNewBlock(workout_01Screen,relaxBlock);
+    seconds_R = 30;
+    clearTimeout(timerIdRelax);
+    video_workout_01.play();
+    timer();
+}
+
+btnGoToWorkout_01.onclick = ()=> {
+    video_workout_01.play();
+
+    minutes = parseInt(video_workout_01.duration / 60, 10);
+    seconds = Math.floor(video_workout_01.duration % 60);
+    
+    timer();
+}
+
+function addValue() {
+    seconds--;
+        if (seconds == 0) {
+            seconds = 60;
+            minutes--;
+        }
+        if (minutes == 0 && seconds == 1) {
+            clearTimeout(timerId);
+            showNewBlock(blockEndWorkout_01,workout_01Screen);
+            return;
+        }
+    timer_workout_01.innerHTML = creatTime();
+    timer();
+}
+
+function timer() {
+    timerId = setTimeout(addValue, 1000);
+}
+
+function creatTime() {
+    let html = '<span id="min" data-min="' + minutes + '">' + (minutes ? (minutes > 9 ? minutes : '0' + minutes) : '00') + '</span>:<span id="sec" data-sec="' + seconds + '">' + (seconds ? (seconds > 9 ? seconds : '0' + seconds) : '00');
+    return html;
+ }
 
 btnBackQuestionChipsNo.addEventListener('click', ()=>showNewBlock(guestionChipsNo,workout_01Screen));
+btnBackQuestionChipsNo.onclick = ()=> {
+    video_workout_01.pause();
+}
 
 showTimerAndBtn_01.onclick = ()=> {
     timerWorkout_01.classList.toggle('none');
     btnWorkout_01.classList.toggle('none');
 }
 
-function showEndlock(blockSHow,blockNone) {
+bntRelaxWorkout_01.onclick = ()=> {
+    showNewBlock(relaxBlock,workout_01Screen);
+    video_workout_01.pause();
+    clearTimeout(timerId);
+    timerRelax();
+}
+function timerRelax() {
 
-    setTimeout(() => blockSHow.classList.add('show'), 5000);
-    setTimeout(() => blockSHow.classList.remove('none'), 4900);
-    setTimeout(() => blockNone.classList.add('none'), 5000);
+    timerThirtySeconds();
 
-    setTimeout(() => blockSHow.classList.add('fadeIn'), 5000);
-    setTimeout(() => blockSHow.classList.remove('none'), 4900);
-    setTimeout(() => blockNone.classList.add('fadeOut'), 5000);
-    setTimeout(() => blockNone.classList.remove('fadeIn'), 5000);
+    function addValueRelax() {
+        seconds_R--;
+        console.log(seconds_R)
+            if (seconds_R == 1) {
+                seconds_R = 30;
+                clearTimeout(timerIdRelax);
+                showNewBlock(workout_01Screen,relaxBlock);
+                video_workout_01.play();
+                timer();
+                return;
+            }
+        
+        timer_relax_workout_01.innerHTML = creatTime();
+        timerThirtySeconds();
+    }
+
+    function timerThirtySeconds() {
+        timerIdRelax = setTimeout(addValueRelax, 1000);
+    }
+
+    function creatTime() {
+        let html = '<span id="min_relax" data-min="' + minutes_R + '">' + (minutes_R ? (minutes_R > 9 ? minutes_R : '0' + minutes_R) : '00') + '</span>:<span id="sec_relax" data-sec="' + seconds_R + '">' + (seconds_R ? (seconds_R > 9 ? seconds_R : '0' + seconds_R) : '00');
+        return html;
+    }
+
 }
 
-bntRelaxWorkout_01.addEventListener('click', ()=>showNewBlock(relaxBlock,workout_01Screen));
-btnBackWorkout_01.addEventListener('click', ()=>showNewBlock(workout_01Screen,relaxBlock));
-btnBackWorkout_01_2.addEventListener('click', ()=>showNewBlock(workout_01Screen,blockEndWorkout_01));
+btnBackWorkout_01_2.addEventListener('click', ()=>backToWorkoutBegin_01(finalScreen,blockEndWorkout_01));
+btnBackWorkout_01_3.addEventListener('click', ()=>backToWorkoutBegin_01(finalScreen,blockEndWorkout_01));
+btnBackWorkout_01_4.addEventListener('click', ()=>backToWorkoutBegin_01(finalScreen,blockEndWorkout_01));
 
-var swiper = new Swiper('.swiper-container', {
+function backToWorkoutBegin_01() {
+    showNewBlock(workout_01Screen,blockEndWorkout_01);
+    video_workout_01.play();
+    minutes = parseInt(video_workout_01.duration / 60, 10);
+    seconds = Math.floor(video_workout_01.duration % 60);
+    timer();
+}
+
+btnEndWorkout_01.addEventListener('click', ()=>showNewBlock(finalScreen,blockEndWorkout_01));
+
+
+
+//swiper
+let swiper = new Swiper('.swiper-container', {
     spaceBetween: 0,
     width: 900,
     loop: false,
@@ -122,6 +223,3 @@ var swiper = new Swiper('.swiper-container', {
   },
   centeredSlides: false,
 });
-
-swiper.params.speed = 100
-swiper.reInit(true)
