@@ -197,9 +197,10 @@ function timerRelax() {
 
 }
 
-btnBackWorkout_01_2.addEventListener('click', ()=>backToWorkoutBegin_01(finalScreen,blockEndWorkout_01));
-btnBackWorkout_01_3.addEventListener('click', ()=>backToWorkoutBegin_01(finalScreen,blockEndWorkout_01));
-btnBackWorkout_01_4.addEventListener('click', ()=>backToWorkoutBegin_01(finalScreen,blockEndWorkout_01));
+btnBackWorkout_01_2.addEventListener('click', ()=>backToWorkoutBegin_01());
+btnBackWorkout_01_3.addEventListener('click', ()=>backToWorkoutBegin_01());
+btnBackWorkout_01_4.addEventListener('click', ()=>backToWorkoutBegin_01());
+btnBackWorkout_01_4.addEventListener('click', ()=>showNewBlock(workout_01Screen,finalScreen));
 
 function backToWorkoutBegin_01() {
     timer_workout_01.innerHTML = `<span id="min" data-min="0">${localStorage.getItem('min')}</span>:<span id="sec" data-sec="0">${localStorage.getItem('sec')}</span>`;
