@@ -1,111 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: Gotham Pro; 
-    src: url(./GothamPro/GothamPro.ttf);
-   }
-
-h2 {
-    font-family: Gotham Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 32px;
-    color: #FFFFFF;
-}
-
-h3 {
-    font-family: Gotham Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 120%;
-    display: flex;
-    align-items: flex-end;
-    color: #FBFBFB;
-}
-
-h4 {
-    font-family: Gotham Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 140%;
-    color: #3B2D40;
-}
-
-h5 {
-    font-family: Gotham Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 120%;
-    color: #FFFFFF;
-}
-
-.show {
-    opacity: 1 !important;
-    transition-duration: 0.3s !important;
-    // display: block !important;
-}
-
-.none {
-    opacity: 0 !important;
-    transition-duration: 0.3s !important;
-    // display: none !important;
-}
-
-.fadeOut {
-    display: none !important;
-}
-
-.fadeIn {
-    display: block !important;
-}
-
-.back() {
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.btn-pink-small() {
-    width: 160px;
-    height: 60px;
-    background: #FF6394;
-    box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
-    border-radius: 10px;
-    font-family: Gotham Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 120%;
-    color: #FFFFFF;
-    border: none;
-}
-
-
-.btn-violet-big() {
-    width: 335px;
-    height: 60px;
-    background: #3C134A;
-    box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
-    border-radius: 10px;
-    border: none;
-    font-family: Gotham Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 120%;
-    color: #FFFFFF;
-}
-
-@color-violet: #691686;
-@color-dark-violet : #3C134A;
-@color0pink: #FF6394;
-@color-black: #220B2B;
+@import "generalStyles";
 
 .wrapp {
     max-width: 375px;
@@ -170,7 +63,6 @@ h5 {
         .login-screen {
             width: 100%;
             height: 100vh;
-            // display: none;
             background-size: cover;
             background: linear-gradient(343.67deg, #7A5DB8 -2.15%, #FF6394 48.14%, #C34DB2 94.75%);
             .back();
@@ -579,7 +471,6 @@ h5 {
                 .btn {
                     width: 375px;
                     height: 108px;
-                    // background-color: gold;
                     background-image: url(./images/screen3/bottom.png);
                     background-position: right bottom;
                     background-size: contain;
@@ -637,193 +528,78 @@ h5 {
                 }
             }
         }
-        .guestionChips-screen, .final-screen {
-            width: 100%;
-            height: 100vh;
-            overflow-y: scroll
-            .back();
-            position: relative;
-            opacity: 0;
-            transition-duration: 0;
+        .guestionChips-screen {
+            .block-content-parent();
             background: url(./images/guestionChips/1.png) no-repeat center top;
             background-size: cover;
             .content {
-                width: 100%;
-                height: 100%;
-                position: relative;
-                // background: url(images/guestionChips/Intersect.png) no-repeat;
-                // background-position-y: 0;
-                // background-position-x: center;
-                // background-size: cover;
+                .block-content();
                 &-top {
-                    width: 325px;
-                    height: 32px;
-                    margin: 0 auto;
-                    padding-top: 35px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: nowrap;
-                    z-index: 1;
+                    .block-content-top();
                     &__left {
-                        width: 67px;
-                        height: 32px;
-                        background-image: url(./images/screen3/right-arrow\ 2.png);
-                        background-repeat: no-repeat;
-                        background-position: 0 center;
-                        background-size: 10%;
-                        cursor: pointer;
-                        transition: 0.5s;
+                        .block-content-top-left(); 
                         p {
-                            font-family: Gotham Pro;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 14px;
-                            line-height: 32px;
-                            display: flex;
-                            align-items: center;
-                            color: #FFFFFF;
-                            position: relative;
-                            right: -23px;
+                            .block-content-top-left-p();
                         }
                     }
                     &__right {
-                        width: 33px;
-                        height: 33px;
-                        background-image: url(./images/screen3/library.png);
-                        background-repeat: no-repeat;
-                        background-position: center center;
-                        background-size: contain;
-                        cursor: pointer;
-                        transition: 0.5s;
+                        .block-content-top-right();
                     }
                 }
                 .bg {
                     width: 100%;
                     height: 60%;
-                    // background: url(images/guestionChips/Intersect.png) no-repeat;
-                    // background-position-y: 0;
-                    // background-position-x: center;
-                    // background-size: cover;
                     position: absolute;
                     left: 0;
                     bottom: 0;
                 }
-                .content-text {
+                &-text {
                     h3 {
-                        position: absolute;
+                        .block-question-content-text-h3();
                         bottom: 110px;
-                        left: 0;
-                        padding: 0 0 0 20px;
                     }
                 }
-                .content-btn {
-                    position: absolute;
-                    bottom: 25px;
-                    left: 0;
-                    width: 100%;
-                    height: auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                &-btn {
+                    .block-question-content-btn();
                     button {
                         margin: 0 7px;
                         .btn-pink-small();
-                    }
-                    button:focus {
-                        outline: none;
                     }
                 }
             }    
         }
         .guestionChips-no {
-            width: 100%;
-            height: 100%;
-            overflow-y: scroll
-            .back();
-            position: relative;
-            opacity: 0;
-            transition-duration: 0;
+            .block-content-parent();
             .content {
-                width: 100%;
-                height: 100%;
-                position: relative;
+                .block-content();
                 &-top {
-                    width: 100%;
-                    height: 340px;
+                    .block-answer-top();
                     background: url(./images/answerСhips/1.png) center top no-repeat;
-                    background-size: contain;
-                    position: relative;
                     .btn {
-                        width: 325px;
-                        height: 32px;
-                        margin: 0 auto;
-                        padding-top: 35px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: nowrap;
+                        .block-content-top();
                         &-left {
-                            width: 67px;
-                            height: 32px;
-                            background-image: url(./images/screen3/right-arrow\ 2.png);
-                            background-repeat: no-repeat;
-                            background-position: 0 center;
-                            background-size: 10%;
-                            cursor: pointer;
-                            transition: 0.5s;
+                            .block-content-top-left(); 
                             p {
-                                font-family: Gotham Pro;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 14px;
-                                line-height: 32px;
-                                display: flex;
-                                align-items: center;
-                                color: #FFFFFF;
-                                position: relative;
-                                right: -23px;
+                                .block-content-top-left-p();
                             }
                         }
                         &-right {
-                            width: 33px;
-                            height: 33px;
-                            background-image: url(./images/screen3/library.png);
-                            background-repeat: no-repeat;
-                            background-position: center center;
-                            background-size: contain;
-                            cursor: pointer;
-                            transition: 0.5s;
+                            .block-content-top-right();
                         }
                     }
                     .header {
-                        position: absolute;
-                        left: 0;
-                        bottom: 25px;
+                        .block-answer-header();
                         p {
-                            font-family: Gotham Pro;
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 30px;
-                            line-height: 120%;
-                            color: #FBFBFB;
-                            padding: 0 20px;
+                            .block-answer-header-p();
                         }
-
                     }
-
                 }
                 &-main {
                     .text {
                         &-header {
                             padding: 35px 20px 0;
                             p {
-                                font-family: Gotham Pro;
-                                font-style: normal;
-                                font-weight: bold;
-                                font-size: 18px;
-                                line-height: 120%;
-                                color: #691686;
+                                .block-answer-main-text-header-p();
                             }
                         }
                         &-up {
@@ -838,18 +614,9 @@ h5 {
                             }
                         }
                         .btn-bottom {
-                            width: 100%;
-                            height: 108px;
-                            background: url(./images/answerСhips/bottom.png) no-repeat right bottom;
-                            background-size: contain;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
+                            .block-answer-main-text-btn-bottom();
                             button {
                                 .btn-violet-big();
-                            }
-                            button:focus {
-                                outline: none;
                             }
                         }
                     }
@@ -949,6 +716,8 @@ h5 {
                     justify-content: center;
                     align-items: center;
                     z-index: 10px;
+                    display: block;
+                    margin: 0 auto;
                     p {
                         font-family: Gotham Pro;
                         font-style: normal;
@@ -956,6 +725,8 @@ h5 {
                         font-size: 18px;
                         line-height: 120%;
                         color: #FFFFFF;
+                        text-align: center;
+                        padding-top: 8px;
                     }
                 }
                 &-stop {
@@ -969,6 +740,8 @@ h5 {
                     align-items: center;
                     z-index: 10;
                     button {
+                        display: block;
+                        margin: 0 auto;
                         .btn-violet-big();
                         background: #FF6394 !important;
                     }
@@ -1095,11 +868,27 @@ h5 {
                 }
             }
         }    
-        .final-screen  {
-            background-image: url(./images/finalScreen/1.png) !important;
+        .final-screen {
+            .block-content-parent();
+            background-image: url(./images/finalScreen/1.png);
+            background-size: cover;
             .content {
+                .block-content();
+                &-top {
+                    .block-content-top();
+                    &__left {
+                        .block-content-top-left(); 
+                        p {
+                            .block-content-top-left-p();
+                        }
+                    }
+                    &__right {
+                        .block-content-top-right(); 
+                    }
+                }
                 &-text {
                     h3 {
+                        .block-question-content-text-h3();
                         bottom: 175px !important;
                     }
                     p {
@@ -1116,11 +905,17 @@ h5 {
                     }
                 }
                 &-btn {
+                    .block-question-content-btn();
                     button {
+                        margin: 0 7px;
                         width: 160px !important;
+                        .btn-pink-small();
                     }
                 }
             }
+        }
+        button:focus {
+            outline: none;
         }
     }
 }

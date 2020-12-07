@@ -583,25 +583,24 @@ h5 {
   right: 90px;
   top: 40px;
 }
-.wrapp .content .guestionChips-screen,
-.wrapp .content .final-screen {
+.wrapp .content .guestionChips-screen {
   width: 100%;
   height: 100vh;
-  overflow-y: scroll background-position: center center; background-repeat: no-repeat;;
+  overflow-y: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
   position: relative;
   opacity: 0;
   transition-duration: 0;
   background: url(images/guestionChips/1.png) no-repeat center top;
   background-size: cover;
 }
-.wrapp .content .guestionChips-screen .content,
-.wrapp .content .final-screen .content {
+.wrapp .content .guestionChips-screen .content {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.wrapp .content .guestionChips-screen .content-top,
-.wrapp .content .final-screen .content-top {
+.wrapp .content .guestionChips-screen .content-top {
   width: 325px;
   height: 32px;
   margin: 0 auto;
@@ -612,8 +611,7 @@ h5 {
   flex-wrap: nowrap;
   z-index: 1;
 }
-.wrapp .content .guestionChips-screen .content-top__left,
-.wrapp .content .final-screen .content-top__left {
+.wrapp .content .guestionChips-screen .content-top__left {
   width: 67px;
   height: 32px;
   background-image: url(images/screen3/right-arrow\ 2.png);
@@ -623,8 +621,7 @@ h5 {
   cursor: pointer;
   transition: 0.5s;
 }
-.wrapp .content .guestionChips-screen .content-top__left p,
-.wrapp .content .final-screen .content-top__left p {
+.wrapp .content .guestionChips-screen .content-top__left p {
   font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
@@ -636,8 +633,7 @@ h5 {
   position: relative;
   right: -23px;
 }
-.wrapp .content .guestionChips-screen .content-top__right,
-.wrapp .content .final-screen .content-top__right {
+.wrapp .content .guestionChips-screen .content-top__right {
   width: 33px;
   height: 33px;
   background-image: url(images/screen3/library.png);
@@ -647,23 +643,20 @@ h5 {
   cursor: pointer;
   transition: 0.5s;
 }
-.wrapp .content .guestionChips-screen .content .bg,
-.wrapp .content .final-screen .content .bg {
+.wrapp .content .guestionChips-screen .content .bg {
   width: 100%;
   height: 60%;
   position: absolute;
   left: 0;
   bottom: 0;
 }
-.wrapp .content .guestionChips-screen .content .content-text h3,
-.wrapp .content .final-screen .content .content-text h3 {
-  position: absolute;
-  bottom: 110px;
+.wrapp .content .guestionChips-screen .content-text h3 {
   left: 0;
   padding: 0 0 0 20px;
+  position: absolute;
+  bottom: 110px;
 }
-.wrapp .content .guestionChips-screen .content .content-btn,
-.wrapp .content .final-screen .content .content-btn {
+.wrapp .content .guestionChips-screen .content-btn {
   position: absolute;
   bottom: 25px;
   left: 0;
@@ -673,8 +666,7 @@ h5 {
   justify-content: center;
   align-items: center;
 }
-.wrapp .content .guestionChips-screen .content .content-btn button,
-.wrapp .content .final-screen .content .content-btn button {
+.wrapp .content .guestionChips-screen .content-btn button {
   margin: 0 7px;
   width: 160px;
   height: 60px;
@@ -689,14 +681,12 @@ h5 {
   color: #FFFFFF;
   border: none;
 }
-.wrapp .content .guestionChips-screen .content .content-btn button:focus,
-.wrapp .content .final-screen .content .content-btn button:focus {
-  outline: none;
-}
 .wrapp .content .guestionChips-no {
   width: 100%;
-  height: 100%;
-  overflow-y: scroll background-position: center center; background-repeat: no-repeat;;
+  height: 100vh;
+  overflow-y: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
   position: relative;
   opacity: 0;
   transition-duration: 0;
@@ -707,11 +697,11 @@ h5 {
   position: relative;
 }
 .wrapp .content .guestionChips-no .content-top {
+  background-size: contain;
+  position: relative;
   width: 100%;
   height: 340px;
   background: url(images/answerСhips/1.png) center top no-repeat;
-  background-size: contain;
-  position: relative;
 }
 .wrapp .content .guestionChips-no .content-top .btn {
   width: 325px;
@@ -722,6 +712,7 @@ h5 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  z-index: 1;
 }
 .wrapp .content .guestionChips-no .content-top .btn-left {
   width: 67px;
@@ -814,9 +805,6 @@ h5 {
   line-height: 120%;
   color: #FFFFFF;
 }
-.wrapp .content .guestionChips-no .content-main .text .btn-bottom button:focus {
-  outline: none;
-}
 .wrapp .content .workout_01-screen {
   width: 100%;
   height: 100vh;
@@ -908,6 +896,8 @@ h5 {
   justify-content: center;
   align-items: center;
   z-index: 10px;
+  display: block;
+  margin: 0 auto;
 }
 .wrapp .content .workout_01-screen .content-timer p {
   font-family: Gotham Pro;
@@ -916,6 +906,8 @@ h5 {
   font-size: 18px;
   line-height: 120%;
   color: #FFFFFF;
+  text-align: center;
+  padding-top: 8px;
 }
 .wrapp .content .workout_01-screen .content-stop {
   position: absolute;
@@ -929,6 +921,8 @@ h5 {
   z-index: 10;
 }
 .wrapp .content .workout_01-screen .content-stop button {
+  display: block;
+  margin: 0 auto;
   width: 335px;
   height: 60px;
   background: #3C134A;
@@ -1088,9 +1082,69 @@ h5 {
   outline: none;
 }
 .wrapp .content .final-screen {
-  background-image: url(images/finalScreen/1.png) !important;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+  background-image: url(images/finalScreen/1.png);
+  background-size: cover;
+}
+.wrapp .content .final-screen .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapp .content .final-screen .content-top {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+.wrapp .content .final-screen .content-top__left {
+  width: 67px;
+  height: 32px;
+  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .final-screen .content-top__left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .final-screen .content-top__right {
+  width: 33px;
+  height: 33px;
+  background-image: url(images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .wrapp .content .final-screen .content-text h3 {
+  left: 0;
+  padding: 0 0 0 20px;
+  position: absolute;
   bottom: 175px !important;
 }
 .wrapp .content .final-screen .content-text p {
@@ -1105,8 +1159,34 @@ h5 {
   line-height: 120%;
   color: #FBFBFB;
 }
+.wrapp .content .final-screen .content-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .wrapp .content .final-screen .content-btn button {
+  margin: 0 7px;
   width: 160px !important;
+  width: 160px;
+  height: 60px;
+  background: #FF6394;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  border: none;
+}
+.wrapp .content button:focus {
+  outline: none;
 }
 @media (max-height: 570px) {
   .guestionChips-screen .content .bg .content-text h3 {

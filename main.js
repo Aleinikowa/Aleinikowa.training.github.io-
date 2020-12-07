@@ -88,6 +88,8 @@ btnBacktFunctionalScreen.addEventListener('click', ()=>showNewBlock(functionalSc
 backtQuestionChipsScreen.addEventListener('click', ()=>showNewBlock(guestionChipsScreen,guestionChipsNo));
 
 //Workout_01
+localStorage.clear();
+
 let timerId,
     sec = document.getElementById('sec'),
     min = document.getElementById('min'),
@@ -115,7 +117,10 @@ btnGoToWorkout_01.onclick = ()=> {
 
     minutes = parseInt(video_workout_01.duration / 60, 10);
     seconds = Math.floor(video_workout_01.duration % 60);
-    
+    localStorage.setItem('min', minutes)
+    localStorage.setItem('sec', seconds)
+
+    console.log(minutes,seconds)
     timer();
 }
 
@@ -149,8 +154,10 @@ btnBackQuestionChipsNo.onclick = ()=> {
 }
 
 showTimerAndBtn_01.onclick = ()=> {
-    timerWorkout_01.classList.toggle('none');
-    btnWorkout_01.classList.toggle('none');
+    timerWorkout_01.classList.toggle('fadeOut');
+    btnWorkout_01.classList.toggle('fadeOut');
+    timerWorkout_01.classList.toggle('fadeIn');
+    btnWorkout_01.classList.toggle('fadeIn');
 }
 
 bntRelaxWorkout_01.onclick = ()=> {
@@ -195,6 +202,7 @@ btnBackWorkout_01_3.addEventListener('click', ()=>backToWorkoutBegin_01(finalScr
 btnBackWorkout_01_4.addEventListener('click', ()=>backToWorkoutBegin_01(finalScreen,blockEndWorkout_01));
 
 function backToWorkoutBegin_01() {
+    timer_workout_01.innerHTML = `<span id="min" data-min="0">${localStorage.getItem('min')}</span>:<span id="sec" data-sec="0">${localStorage.getItem('sec')}</span>`;
     showNewBlock(workout_01Screen,blockEndWorkout_01);
     video_workout_01.play();
     minutes = parseInt(video_workout_01.duration / 60, 10);
