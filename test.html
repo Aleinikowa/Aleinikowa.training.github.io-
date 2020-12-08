@@ -13,19 +13,77 @@
 <body>
     <div class="wrapp">
         <div class="content">
-            <div class="final-screen fadeOut">
+            <div class="test-screen fadeIn">
                 <div class="content">
                     <div class="content-top">
-                        <div class="content-top__left back-workout_01"><p>Назад</p></div>
+                        <div class="content-top__left"><p>Назад</p></div>
                         <div class="content-top__right"></div>
                     </div>
                     <div class="bg">
                         <div class="content-text">
-                            <h3>Сегодня было жарко!<br>Спасибо за работу,<br>вы молодец!</h3>
-                            <p>Жду вас на следующей тренировке</p>
+                            <h3>Ура! Поздравляю!<br>Вы прошли пробную<br>программу<br>функциональных<br>тренировок</h3>
+                            <p>Поделитесь, пожалуйста, своим<br>мнением о программе</p>
                         </div>
                         <div class="content-btn">
-                            <button id="final-workout_01">Закончить</button>
+                            <button id="goToQuestions">Ответить на вопросы</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question-screen fadeOut">
+                <div class="top">
+                    <div class="top-btn">
+                        <div class="top-btn__left backToTestScreen">
+                            <p>Назад</p>
+                        </div>
+                        <div class="top-btn__right">
+                        </div>
+                    </div>
+                    <h3 class="top-text">Поделитесь своим<br>мнением</h3>
+                </div>
+                <div class="content">
+                    <div class="text">
+                        <div class="text-number">
+                            <p>Вопрос 1 из 10</p>
+                        </div>
+                        <div class="text-header">
+                            <p>Какая у вас была цель по прохождению программы?</p>
+                        </div>
+                        <div class="text-list">
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_1" class="question1" name="question1" id="first" type="radio" value="Улучшение гибкости тела"><label for="first">Улучшение гибкости тела</label>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_1" class="question1"  name="question1" id="second" type="radio" value="Укрепление мышц"><label for="second">Укрепление мышц</label>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_1" class="question1"  name="question1" id="third" type="radio" value="Похудение"><label for="third">Похудение</label>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_1" class="question1"  name="question1" id="fourth" type="radio" value="Набор мышечной массы"><label for="fourth">Набор мышечной массы</label>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_1" class="question1"  name="question1" id="fifth" type="radio" value="Улучшение выносливости"><label for="fifth">Улучшение выносливости</label>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="btn">
+                        <div class="btn-left backToTestScreen">
+                            <p>Назад</p>
+                        </div>
+                        <div class="btn-right goToNextQuestion">
+                            <p id="textBtn">Поехали!</p>
                         </div>
                     </div>
                 </div>

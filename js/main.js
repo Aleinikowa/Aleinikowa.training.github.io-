@@ -187,7 +187,6 @@ function timerRelax() {
     }
 
 }
-
 btnBackWorkout_01_2.addEventListener('click', ()=>backToWorkoutBegin_01());
 btnBackWorkout_01_3.addEventListener('click', ()=>backToWorkoutBegin_01());
 btnBackWorkout_01_4.addEventListener('click', ()=>backToWorkoutBegin_01());

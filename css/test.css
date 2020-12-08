@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Gotham Pro;
+  src: url(../GothamPro/GothamPro.ttf);
+}
+h2 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+h3 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  display: flex;
+  align-items: flex-end;
+  color: #FBFBFB;
+}
+h4 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #3B2D40;
+}
+h5 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.show {
+  opacity: 1 !important;
+  transition-duration: 0.3s !important;
+}
+.none {
+  opacity: 0 !important;
+  transition-duration: 0.3s !important;
+}
+.fadeOut {
+  display: none !important;
+}
+.fadeIn {
+  display: block !important;
+}
+.wrapp .content .test-screen {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+  background-image: url(../images/test/1.png);
+  background-size: cover;
+  opacity: 1;
+}
+.wrapp .content .test-screen .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapp .content .test-screen .content-top {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+.wrapp .content .test-screen .content-top__left {
+  width: 67px;
+  height: 32px;
+  background-image: url(../images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .test-screen .content-top__left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .test-screen .content-top__right {
+  width: 33px;
+  height: 33px;
+  background-image: url(../images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .test-screen .content-text h3 {
+  left: 0;
+  padding: 0 0 0 20px;
+  position: absolute;
+  bottom: 175px !important;
+}
+.wrapp .content .test-screen .content-text p {
+  position: absolute;
+  bottom: 117px;
+  left: 0;
+  padding: 0 0 0 20px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FBFBFB;
+}
+.wrapp .content .test-screen .content-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapp .content .test-screen .content-btn button {
+  margin: 0 7px;
+  width: 160px;
+  height: 60px;
+  background: #FF6394;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  border: none;
+  width: 335px !important;
+}
+.wrapp .content .question-screen {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  overflow-y: scroll background-position: center center; background-repeat: no-repeat;;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+}
+.wrapp .content .question-screen .top {
+  width: 100%;
+  height: 135px;
+  background-image: url(../images/test/Group\ 46.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+}
+.wrapp .content .question-screen .top-btn {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapp .content .question-screen .top-btn__left {
+  width: 67px;
+  height: 32px;
+  background-image: url(../images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .question-screen .top-btn__left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .question-screen .top-btn__right {
+  width: 33px;
+  height: 33px;
+  background-image: url(../images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .question-screen .top-text {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.wrapp .content .question-screen .content {
+  width: 100%;
+  height: auto;
+}
+.wrapp .content .question-screen .content .text-number {
+  margin: 24px 0 5px;
+  padding: 0 20px;
+}
+.wrapp .content .question-screen .content .text-header {
+  padding: 0 20px 24px;
+}
+.wrapp .content .question-screen .content .text-header p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: #3C134A;
+}
+.wrapp .content .question-screen .content .text-list {
+  padding: 0 20px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
+}
+.wrapp .content .question-screen .content .text-list .radio {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3B2D40;
+  padding-bottom: 24px;
+}
+.wrapp .content .question-screen .content .text-list .radio input[type=radio] {
+  display: none;
+}
+.wrapp .content .question-screen .content .text-list .radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.wrapp .content .question-screen .content .text-list .radio label:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-image: url(../images/screen2/off.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapp .content .question-screen .content .text-list .radio input[type=radio]:checked + label:before {
+  background: url(../images/test/on.png);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.wrapp .content .question-screen .content .text-list .radio label:hover:before {
+  filter: brightness(120%);
+}
+.wrapp .content .question-screen .content .text-list .radio input[type=radio]:disabled + label:before {
+  filter: grayscale(100%);
+}
+.wrapp .content .question-screen .content .btn {
+  width: 375px;
+  height: 108px;
+  background-image: url(../images/test/bottom.png);
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.wrapp .content .question-screen .content .btn-left {
+  width: 67px;
+  height: 32px;
+  background-image: url(../images/screen3/Vector.png);
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 20px;
+}
+.wrapp .content .question-screen .content .btn-left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #3C134A;
+  position: relative;
+  right: -23px;
+  border-right: 2px solid #3C134A;
+}
+.wrapp .content .question-screen .content .btn-right {
+  width: 233px;
+  height: inherit;
+  background-image: url(../images/test/forward.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  background-size: 25%;
+  background-position-x: 160px;
+  background-position-y: center;
+}
+.wrapp .content .question-screen .content .btn-right p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  color: #999999;
+  position: absolute;
+  right: 90px;
+  top: 40px;
+}
+.wrapp .content button:focus {
+  outline: none;
+}
+@media (max-height: 570px) {
+  .test-screen .content .bg .content-text h3 {
+    font-size: 20px !important;
+  }
+}
+.back-color {
+  background-image: url(../images/screen3/bottom.png) !important;
+}
+.btn-color {
+  background-image: url(../images/screen3/forward.png) !important;
+  background-position: right center !important;
+  background-size: contain !important;
+}
+.text-color {
+  color: #3C134A !important;
+}
