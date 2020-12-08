@@ -123,7 +123,8 @@ function addValue() {
         }
         if (minutes == 0 && seconds == 1) {
             clearTimeout(timerId);
-            showNewBlock(blockEndWorkout_01,workout_01Screen);
+            video_workout_01.pause();
+            setTimeout(() => showNewBlock(blockEndWorkout_01,workout_01Screen), 100);
             return;
         }
     timer_workout_01.innerHTML = creatTime();
@@ -139,9 +140,13 @@ function creatTime() {
     return html;
  }
 
-btnBackQuestionChipsNo.addEventListener('click', ()=>showNewBlock(guestionChipsNo,workout_01Screen));
 btnBackQuestionChipsNo.onclick = ()=> {
+    clearTimeout(timerId);
+    showNewBlock(guestionChipsNo,workout_01Screen);
+    timer_workout_01.innerHTML = `<span id="min" data-min="0">${localStorage.getItem('min')}</span>:<span id="sec" data-sec="0">${localStorage.getItem('sec')}</span>`;
     video_workout_01.pause();
+    console.log (video_workout_01.currentTime)
+    video_workout_01.currentTime = 0;
 }
 
 showTimerAndBtn_01.onclick = ()=> {
