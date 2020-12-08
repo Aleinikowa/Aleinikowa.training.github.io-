@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Gotham Pro;
+  src: url(../GothamPro/GothamPro.ttf);
+}
+h2 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+h3 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+  display: flex;
+  align-items: flex-end;
+  color: #FBFBFB;
+}
+h4 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #3B2D40;
+}
+h5 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.show {
+  opacity: 1 !important;
+  transition-duration: 0.3s !important;
+}
+.none {
+  opacity: 0 !important;
+  transition-duration: 0.3s !important;
+}
+.fadeOut {
+  display: none !important;
+}
+.fadeIn {
+  display: block !important;
+}
+.wrapp .content .guestion-screen {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+  background: url(../images/workout_04/1.png) no-repeat center top;
+  background-size: cover;
+  opacity: 1;
+}
+.wrapp .content .guestion-screen .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapp .content .guestion-screen .content-top {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+.wrapp .content .guestion-screen .content-top__left {
+  width: 67px;
+  height: 32px;
+  background-image: url(../images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .guestion-screen .content-top__left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .guestion-screen .content-top__right {
+  width: 33px;
+  height: 33px;
+  background-image: url(../images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .guestion-screen .content .bg {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.wrapp .content .guestion-screen .content-text h3 {
+  left: 0;
+  padding: 0 0 0 20px;
+  position: absolute;
+  bottom: 110px;
+}
+.wrapp .content .guestion-screen .content-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapp .content .guestion-screen .content-btn button {
+  margin: 0 7px;
+  width: 160px;
+  height: 60px;
+  background: #FF6394;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  border: none;
+}
+.wrapp .content .guestion-screen .content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+}
+.wrapp .content .answer-screen {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+}
+.wrapp .content .answer-screen .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapp .content .answer-screen .content-top {
+  background-size: contain;
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background: url(../images/workout_04/Group\ 49.png) center top no-repeat;
+  background-size: cover;
+}
+.wrapp .content .answer-screen .content-top .btn {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+.wrapp .content .answer-screen .content-top .btn-left {
+  width: 67px;
+  height: 32px;
+  background-image: url(../images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .answer-screen .content-top .btn-left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .answer-screen .content-top .btn-right {
+  width: 33px;
+  height: 33px;
+  background-image: url(../images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .answer-screen .content-top .header {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+}
+.wrapp .content .answer-screen .content-top .header p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FBFBFB;
+  padding: 0 20px;
+}
+.wrapp .content .answer-screen .content-top .header p span {
+  display: block;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+  line-height: 120%;
+  padding-top: 5px;
+}
+.wrapp .content .answer-screen .content-main .text .header-first {
+  padding: 35px 20px 0;
+}
+.wrapp .content .answer-screen .content-main .text .header-second,
+.wrapp .content .answer-screen .content-main .text .header-third {
+  padding: 25px 20px 0;
+}
+.wrapp .content .answer-screen .content-main .text-header p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #691686;
+}
+.wrapp .content .answer-screen .content-main .text-up {
+  padding: 25px 20px 0;
+}
+.wrapp .content .answer-screen .content-main .text .up-fourth {
+  padding-bottom: 40px !important;
+}
+.wrapp .content .answer-screen .content-main .text-center {
+  padding: 25px 20px;
+  background-color: #F5E5EB;
+  margin-top: 25px;
+}
+.wrapp .content .answer-screen .content-main .text-center h4 {
+  color: #220B2B !important;
+}
+.wrapp .content .answer-screen .content-main .text .btn-bottom {
+  width: 100%;
+  height: 108px;
+  background: url(../images/answerСhips/bottom.png) no-repeat right bottom;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapp .content .answer-screen .content-main .text .btn-bottom a {
+  width: 335px;
+  height: 60px;
+  background: #3C134A;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  border: none;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+}
+.wrapp .content .more-screen {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+}
+.wrapp .content .more-screen .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapp .content .more-screen .content-top {
+  background-size: contain;
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background: url(../images/workout_02/Group\ 47.png) center top no-repeat;
+  background-size: cover;
+}
+.wrapp .content .more-screen .content-top .btn {
+  width: 325px;
+  height: 32px;
+  margin: 0 auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+.wrapp .content .more-screen .content-top .btn-left {
+  width: 67px;
+  height: 32px;
+  background-image: url(../images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .more-screen .content-top .btn-left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+}
+.wrapp .content .more-screen .content-top .btn-right {
+  width: 33px;
+  height: 33px;
+  background-image: url(../images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wrapp .content .more-screen .content-top .header {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+}
+.wrapp .content .more-screen .content-top .header p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FBFBFB;
+  padding: 0 20px;
+}
+.wrapp .content .more-screen .content-main .text-header {
+  padding: 36px 20px 24px;
+}
+.wrapp .content .more-screen .content-main .text-header p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #691686;
+}
+.wrapp .content .more-screen .content-main .text .up-first,
+.wrapp .content .more-screen .content-main .text .up-second,
+.wrapp .content .more-screen .content-main .text .up-third {
+  padding: 0 20px 24px 20px;
+}
+.wrapp .content .more-screen .content-main .text .up-first h4,
+.wrapp .content .more-screen .content-main .text .up-second h4,
+.wrapp .content .more-screen .content-main .text .up-third h4 {
+  padding: 10px 0;
+}
+.wrapp .content .more-screen .content-main .text .header-color {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #691686;
+}
+.wrapp .content .more-screen .content-main .text-center {
+  padding: 24px 20px;
+  margin-bottom: 24px;
+  background-color: #F5E5EB;
+}
+.wrapp .content .more-screen .content-main .text-center h4 {
+  color: #220B2B !important;
+}
+.wrapp .content .more-screen .content-main .text .center-last {
+  margin: 40px 0 20px;
+}
+.wrapp .content .more-screen .content-main .text .center-last span {
+  font-weight: 900;
+}
+.wrapp .content .more-screen .content-main .text #more {
+  width: 335px;
+  height: 60px;
+  background: #3C134A;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  border: none;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  background: #FF6394;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.wrapp .content .more-screen .content-main .text .btn-bottom {
+  width: 100%;
+  height: 108px;
+  background: url(../images/answerСhips/bottom.png) no-repeat right bottom;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapp .content .more-screen .content-main .text .btn-bottom a {
+  width: 335px;
+  height: 60px;
+  background: #3C134A;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  border: none;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+}
+.wrapp .content button:focus {
+  outline: none;
+}
+@media (max-height: 570px) {
+  .guestion-screen .content .bg .content-text h3 {
+    font-size: 20px !important;
+  }
+}

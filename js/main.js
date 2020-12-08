@@ -1,3 +1,5 @@
+import { showNewBlock } from './general.js';
+
 let btnStart = document.getElementById('start'),
     startScreen = document.getElementsByClassName('start-screen')[0],
     loginScreen = document.getElementsByClassName('login-screen')[0],
@@ -31,9 +33,9 @@ let btnStart = document.getElementById('start'),
     btnBackWorkout_01_3 = document.getElementsByClassName('back-workout_01')[2],
     btnBackWorkout_01_4 = document.getElementsByClassName('back-workout_01')[3],
     btn_backToWorkout_01 = document.getElementById('btn-backToWorkout_01'),
-    blockEndWorkout_01 = document.getElementsByClassName('end-workout-screen')[0];
-    btnEndWorkout_01 = document.getElementById('endWorkout_01'),
-    finalScreen = document.getElementsByClassName('final-screen')[0];
+    blockEndWorkout_01 = document.getElementsByClassName('end-workout-screen')[0],
+    btnEndWorkout_01 = document.getElementById('endWorkout_01');
+    // finalScreen = document.getElementsByClassName('final-screen')[0];
 
 btnStart.onclick = ()=> {
     startScreen.classList.add('none');
@@ -68,17 +70,6 @@ btnQuestionChipsNo.onclick = ()=> {
     showNewBlock(guestionChipsNo,guestionChipsScreen);
 }
 
-function showNewBlock(blockSHow, blockNone) {
-
-    blockNone.classList.add('none');
-    blockSHow.classList.remove('fadeOut');
-    blockSHow.classList.add('show');
-
-    setTimeout(() => blockSHow.classList.add('fadeIn'), 200);
-    setTimeout(() => blockSHow.classList.remove('none'), 100);
-    setTimeout(() => blockNone.classList.add('fadeOut'), 200);
-    setTimeout(() => blockNone.classList.remove('fadeIn'), 200);
-}
 
 backtToTainings.addEventListener('click', ()=>showNewBlock(trainingsScreen,functionalScreen));
 topBtnLeft.addEventListener('click', ()=>showNewBlock(trainingsScreen,functionalScreen));
@@ -210,25 +201,3 @@ function backToWorkoutBegin_01() {
     seconds = Math.floor(video_workout_01.duration % 60);
     timer();
 }
-
-btnEndWorkout_01.addEventListener('click', ()=>showNewBlock(finalScreen,blockEndWorkout_01));
-
-
-
-//swiper
-let swiper = new Swiper('.swiper-container', {
-    spaceBetween: 0,
-    width: 900,
-    loop: false,
-    freeMode: false,
-    slidesPerView: 3,
-    spaceBetween: 30,
-    centeredSlidesBounds: true,
-    slidesPerGroup : 1,
-    watchSlidesProgress: true,      
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-  },
-  centeredSlides: false,
-});

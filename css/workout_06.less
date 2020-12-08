@@ -1,0 +1,214 @@
+@import "generalStyles";
+
+
+.wrapp {
+    .content {
+        .guestion-screen {
+            .block-content-parent();
+            background: url(../images/workout_06/1.png) no-repeat center top;
+            background-size: cover;
+            opacity: 1;
+            .content {
+                .block-content();
+                &-top {
+                    .block-content-top();
+                    &__left {
+                        .block-content-top-left(); 
+                        p {
+                            .block-content-top-left-p();
+                        }
+                    }
+                    &__right {
+                        .block-content-top-right();
+                    }
+                }
+                .bg {
+                    width: 100%;
+                    height: 60%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+                &-text {
+                    h3 {
+                        .block-question-content-text-h3();
+                        bottom: 195px;
+                    }
+                }
+                .up-btn {
+                    bottom: 100px;
+                }
+                &-btn {
+                    .block-question-content-btn();
+                    button {
+                        margin: 0 7px;
+                        .btn-pink-small();
+                    }
+                }
+                a {
+                    .btn-link();
+                }
+            } 
+        }
+        .answer-screen {
+            .block-content-parent();
+            .content {
+                .block-content();
+                &-top {
+                    .block-answer-top();
+                    background: url(../images/workout_06/Group\ 51.png) center top no-repeat;
+                    background-size: cover;
+                    .btn {
+                        .block-content-top();
+                        &-left {
+                            .block-content-top-left(); 
+                            p {
+                                .block-content-top-left-p();
+                            }
+                        }
+                        &-right {
+                            .block-content-top-right();
+                        }
+                    }
+                    .header {
+                        .block-answer-header();
+                        p {
+                            .block-answer-header-p();
+                            span {
+                                display: block;
+                                font-size: 18px !important;
+                                font-weight: 100 !important;
+                                line-height: 120%;
+                                padding-top: 5px;
+                            }
+                        }
+                    }
+                }
+                &-main {
+                    .text {
+                        .header-first {
+                            padding-top: 38px !important;
+                        }
+                        &-header {
+                            padding: 25px 20px 0;
+                            p {
+                                .block-answer-main-text-header-p();
+                            }
+                        }
+                        &-up {
+                            padding: 25px 20px 0;
+                            span {
+                                font-weight: 900;
+                                color: rgba(59, 45, 64, 1);
+                            }
+                        }
+                        .center-first {
+                            padding-bottom: 45px !important;
+                        }
+                        &-center {
+                            margin-top: 25px;
+                            padding: 25px 20px;
+                            background-color: #F5E5EB;
+                            h4 {
+                                color: #220B2B !important;
+                            }
+                        }
+                        &-list {
+                            padding: 0 20px 0 37px;
+                            margin-top: 15px;
+                            ul {
+                                list-style: none; 
+                                li {
+                                    padding-bottom: 25px;
+                                    font-family: Gotham Pro;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 140%;
+                                    color: #3B2D40;
+                                }
+                            }
+                            ul li::before {
+                                content: "";
+                                width: 8px;
+                                height: 8px;
+                                position: absolute;
+                                background-color: #3C134A;
+                                border-radius: 50%;
+                                margin-left: -17px;
+                                margin-top: 7px;
+                            }
+                        }
+                        #img-number {
+                            padding: 0 20px 0 30px;
+                            ul {
+                                padding: 17px 0 0 50px !important;
+                                li {
+                                    padding-bottom: 25px;
+                                    font-family: Gotham Pro;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 140%;
+                                    color: #3B2D40;
+                                }
+                            }
+                            ul li:nth-child(1)::before  {
+                                content: url(../images/workout_06/preview.png);
+                                width: 0;
+                                height: 0;
+                                background-size: cover;
+                                position: absolute;
+                                margin-left: -50px;
+                                margin-top: -15px;
+                            }
+                            ul li:nth-child(2)::before  {
+                                content: url(../images/workout_06/preview2.png);
+                                width: 0;
+                                height: 0;
+                                background-size: cover;
+                                position: absolute;
+                                margin-left: -50px;
+                                margin-top: -15px;
+                            }
+                            ul li:nth-child(3)::before  {
+                                content: url(../images/workout_06/preview3.png);
+                                width: 0;
+                                height: 0;
+                                background-size: cover;
+                                position: absolute;
+                                margin-left: -50px;
+                                margin-top: -15px;
+                            }
+                        }
+                        .btn-bottom {
+                            .block-answer-main-text-btn-bottom();
+                            a {
+                                .btn-violet-big();
+                                .btn-link();
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        button:focus {
+            outline: none;
+        }
+    }
+}
+
+@media (max-height: 570px) {
+    .guestion-screen {
+        .content {
+            .bg {
+                .content-text {
+                    h3 {
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+    }
+}

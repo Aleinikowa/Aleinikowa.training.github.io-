@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: Gotham Pro;
-  src: url(GothamPro/GothamPro.ttf);
+  src: url(../GothamPro/GothamPro.ttf);
 }
 h2 {
   font-family: Gotham Pro;
@@ -68,7 +68,7 @@ h5 {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url(images/screen1/1.jpg);
+  background-image: url(../images/screen1/1.jpg);
   position: relative;
   opacity: 1;
   transition-duration: 0;
@@ -81,7 +81,7 @@ h5 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(images/screen1/L_2\,3\ 1.png);
+  background-image: url(../images/screen1/L_2\,3\ 1.png);
 }
 .wrapp .content .start-screen .btn {
   width: 100%;
@@ -106,7 +106,7 @@ h5 {
   border: none;
   margin-top: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-image: url(images/screen1/right-arrow\ 2.png);
+  background-image: url(../images/screen1/right-arrow\ 2.png);
   background-repeat: no-repeat;
   background-position: 90% center;
   background-size: 10%;
@@ -198,13 +198,13 @@ h5 {
   position: absolute;
   left: 0;
   bottom: -1px;
-  background-image: url(images/screen2/off.png);
+  background-image: url(../images/screen2/off.png);
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: center;
 }
 .wrapp .content .login-screen .text-main .form .radio input[type=radio]:checked + label:before {
-  background: url(images/screen2/on.png);
+  background: url(../images/screen2/on.png);
   background-size: 130%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -244,7 +244,7 @@ h5 {
   height: 230px;
   bottom: 0;
   background-size: cover;
-  background-image: url(images/screen1/Intersect.png);
+  background-image: url(../images/screen1/Intersect.png);
 }
 .wrapp .content .login-screen .btn {
   width: 100%;
@@ -270,7 +270,7 @@ h5 {
   border-radius: 10px;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-image: url(images/screen1/right-arrow\ 2.png);
+  background-image: url(../images/screen1/right-arrow\ 2.png);
   background-repeat: no-repeat;
   background-position: 90% center;
   background-size: 10%;
@@ -311,7 +311,7 @@ h5 {
 .wrapp .content .trainings-screen .content .content-traing .libr {
   width: 32px;
   height: 32px;
-  background-image: url(images/slider/library.png);
+  background-image: url(../images/slider/library.png);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -342,7 +342,7 @@ h5 {
   background-repeat: no-repeat;
 }
 .wrapp .content .trainings-screen .content .swiper-slide .img-one {
-  background-image: url(images/slider/1.png);
+  background-image: url(../images/slider/1.png);
   position: relative;
 }
 .wrapp .content .trainings-screen .content .swiper-slide .img-one .name-traning {
@@ -365,10 +365,10 @@ h5 {
   border-left: 4px solid #fff;
 }
 .wrapp .content .trainings-screen .content .swiper-slide .img-two {
-  background-image: url(images/slider/1.png);
+  background-image: url(../images/slider/1.png);
 }
 .wrapp .content .trainings-screen .content .swiper-slide .img-thrird {
-  background-image: url(images/slider/1.png);
+  background-image: url(../images/slider/1.png);
 }
 .wrapp .content .trainings-screen .content .swiper-slide:nth-child(2) {
   margin-left: 25px;
@@ -391,7 +391,7 @@ h5 {
 .wrapp .content .functional-screen .top {
   width: 100%;
   height: 340px;
-  background-image: url(images/screen3/1.png);
+  background-image: url(../images/screen3/1.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
@@ -409,7 +409,7 @@ h5 {
 .wrapp .content .functional-screen .top-btn__left {
   width: 67px;
   height: 32px;
-  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-image: url(../images/screen3/right-arrow\ 2.png);
   background-repeat: no-repeat;
   background-position: 0 center;
   background-size: 10%;
@@ -431,7 +431,7 @@ h5 {
 .wrapp .content .functional-screen .top-btn__right {
   width: 33px;
   height: 33px;
-  background-image: url(images/screen3/library.png);
+  background-image: url(../images/screen3/library.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -528,7 +528,7 @@ h5 {
 .wrapp .content .functional-screen .content .btn {
   width: 375px;
   height: 108px;
-  background-image: url(images/screen3/bottom.png);
+  background-image: url(../images/screen3/bottom.png);
   background-position: right bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -540,7 +540,7 @@ h5 {
 .wrapp .content .functional-screen .content .btn-left {
   width: 67px;
   height: 32px;
-  background-image: url(images/screen3/Vector.png);
+  background-image: url(../images/screen3/Vector.png);
   background-repeat: no-repeat;
   background-position: 10% center;
   background-size: 10%;
@@ -564,7 +564,7 @@ h5 {
 .wrapp .content .functional-screen .content .btn-right {
   width: 233px;
   height: inherit;
-  background-image: url(images/screen3/forward.png);
+  background-image: url(../images/screen3/forward.png);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
@@ -592,7 +592,7 @@ h5 {
   position: relative;
   opacity: 0;
   transition-duration: 0;
-  background: url(images/guestionChips/1.png) no-repeat center top;
+  background: url(../images/guestionChips/1.png) no-repeat center top;
   background-size: cover;
 }
 .wrapp .content .guestionChips-screen .content {
@@ -614,7 +614,7 @@ h5 {
 .wrapp .content .guestionChips-screen .content-top__left {
   width: 67px;
   height: 32px;
-  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-image: url(../images/screen3/right-arrow\ 2.png);
   background-repeat: no-repeat;
   background-position: 0 center;
   background-size: 10%;
@@ -636,7 +636,7 @@ h5 {
 .wrapp .content .guestionChips-screen .content-top__right {
   width: 33px;
   height: 33px;
-  background-image: url(images/screen3/library.png);
+  background-image: url(../images/screen3/library.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -701,7 +701,7 @@ h5 {
   position: relative;
   width: 100%;
   height: 340px;
-  background: url(images/answerСhips/1.png) center top no-repeat;
+  background: url(../images/answerСhips/1.png) center top no-repeat;
 }
 .wrapp .content .guestionChips-no .content-top .btn {
   width: 325px;
@@ -717,7 +717,7 @@ h5 {
 .wrapp .content .guestionChips-no .content-top .btn-left {
   width: 67px;
   height: 32px;
-  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-image: url(../images/screen3/right-arrow\ 2.png);
   background-repeat: no-repeat;
   background-position: 0 center;
   background-size: 10%;
@@ -739,7 +739,7 @@ h5 {
 .wrapp .content .guestionChips-no .content-top .btn-right {
   width: 33px;
   height: 33px;
-  background-image: url(images/screen3/library.png);
+  background-image: url(../images/screen3/library.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -785,7 +785,7 @@ h5 {
 .wrapp .content .guestionChips-no .content-main .text .btn-bottom {
   width: 100%;
   height: 108px;
-  background: url(images/answerСhips/bottom.png) no-repeat right bottom;
+  background: url(../images/answerСhips/bottom.png) no-repeat right bottom;
   background-size: contain;
   display: flex;
   align-items: center;
@@ -854,7 +854,7 @@ h5 {
 .wrapp .content .workout_01-screen .content-top .btn-left {
   width: 67px;
   height: 32px;
-  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-image: url(../images/screen3/right-arrow\ 2.png);
   background-repeat: no-repeat;
   background-position: 0 center;
   background-size: 10%;
@@ -876,7 +876,7 @@ h5 {
 .wrapp .content .workout_01-screen .content-top .btn-right {
   width: 33px;
   height: 33px;
-  background-image: url(images/screen3/library.png);
+  background-image: url(../images/screen3/library.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -948,7 +948,7 @@ h5 {
   position: relative;
   opacity: 0;
   transition-duration: 0;
-  background: url(images/blockRelax/1.png) no-repeat center bottom;
+  background: url(../images/blockRelax/1.png) no-repeat center bottom;
   background-size: cover;
 }
 .wrapp .content .relax-screen .content,
@@ -979,7 +979,7 @@ h5 {
 .wrapp .content .end-workout-screen .content-top .btn-left {
   width: 67px;
   height: 32px;
-  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-image: url(../images/screen3/right-arrow\ 2.png);
   background-repeat: no-repeat;
   background-position: 0 center;
   background-size: 10%;
@@ -1003,7 +1003,7 @@ h5 {
 .wrapp .content .end-workout-screen .content-top .btn-right {
   width: 33px;
   height: 33px;
-  background-image: url(images/screen3/library.png);
+  background-image: url(../images/screen3/library.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -1062,7 +1062,9 @@ h5 {
   align-items: center;
 }
 .wrapp .content .relax-screen .content-btn button,
-.wrapp .content .end-workout-screen .content-btn button {
+.wrapp .content .end-workout-screen .content-btn button,
+.wrapp .content .relax-screen .content-btn a,
+.wrapp .content .end-workout-screen .content-btn a {
   width: 335px;
   height: 60px;
   background: #3C134A;
@@ -1081,6 +1083,13 @@ h5 {
 .wrapp .content .end-workout-screen .content-btn button:focus {
   outline: none;
 }
+.wrapp .content .relax-screen .content-btn a,
+.wrapp .content .end-workout-screen .content-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 .wrapp .content .final-screen {
   width: 100%;
   height: 100vh;
@@ -1090,7 +1099,7 @@ h5 {
   position: relative;
   opacity: 0;
   transition-duration: 0;
-  background-image: url(images/finalScreen/1.png);
+  background-image: url(../images/finalScreen/1.png);
   background-size: cover;
 }
 .wrapp .content .final-screen .content {
@@ -1112,7 +1121,7 @@ h5 {
 .wrapp .content .final-screen .content-top__left {
   width: 67px;
   height: 32px;
-  background-image: url(images/screen3/right-arrow\ 2.png);
+  background-image: url(../images/screen3/right-arrow\ 2.png);
   background-repeat: no-repeat;
   background-position: 0 center;
   background-size: 10%;
@@ -1134,7 +1143,7 @@ h5 {
 .wrapp .content .final-screen .content-top__right {
   width: 33px;
   height: 33px;
-  background-image: url(images/screen3/library.png);
+  background-image: url(../images/screen3/library.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
