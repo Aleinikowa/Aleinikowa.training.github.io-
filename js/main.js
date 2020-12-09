@@ -28,14 +28,10 @@ let btnStart = document.getElementById('start'),
     video_workout_01 = document.getElementById('video_workout_01'),
     relaxBlock = document.getElementsByClassName('relax-screen')[0],
     timer_relax_workout_01 = document.getElementById('timer_relax_workout_01'),
-    btnBackWorkout_01 = document.getElementsByClassName('back-workout_01')[0],
-    btnBackWorkout_01_2 = document.getElementsByClassName('back-workout_01')[1],
-    btnBackWorkout_01_3 = document.getElementsByClassName('back-workout_01')[2],
-    btnBackWorkout_01_4 = document.getElementsByClassName('back-workout_01')[3],
+    backToWorkoutFromRelax = document.getElementById('backToWorkoutFromRelax'),
+    backToWorkoutFromEnd = document.getElementById('backToWorkoutFromEnd'),
     btn_backToWorkout_01 = document.getElementById('btn-backToWorkout_01'),
-    blockEndWorkout_01 = document.getElementsByClassName('end-workout-screen')[0],
-    btnEndWorkout_01 = document.getElementById('endWorkout_01');
-    // finalScreen = document.getElementsByClassName('final-screen')[0];
+    blockEndWorkout_01 = document.getElementsByClassName('end-workout-screen')[0];
 
 btnStart.onclick = ()=> {
     startScreen.classList.add('none');
@@ -46,6 +42,23 @@ btnStart.onclick = ()=> {
 
     loginScreen.classList.add('show');
 }
+
+let swiper = new Swiper('.swiper-container', {
+    spaceBetween: 0,
+    width: 750,
+    loop: false,
+    freeMode: false,
+    slidesPerView: 3,
+    spaceBetween: 25,
+    centeredSlidesBounds: true,
+    slidesPerGroup : 1,
+    watchSlidesProgress: true,      
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+centeredSlides: false,
+});
 
 btnBegin.onclick = ()=> {
     loginScreen.classList.add('none');
@@ -92,7 +105,7 @@ let timerId,
 
 btnGoToWorkout_01.addEventListener('click', ()=>showNewBlock(workout_01Screen,guestionChipsNo));
 
-btnBackWorkout_01.addEventListener('click', ()=>backToWorkout_01());
+backToWorkoutFromRelax.addEventListener('click', ()=>backToWorkout_01());
 btn_backToWorkout_01.addEventListener('click', ()=>backToWorkout_01());
 
 function backToWorkout_01() {
@@ -111,7 +124,6 @@ btnGoToWorkout_01.onclick = ()=> {
     localStorage.setItem('min', minutes)
     localStorage.setItem('sec', seconds)
 
-    console.log(minutes,seconds)
     timer();
 }
 
@@ -145,7 +157,6 @@ btnBackQuestionChipsNo.onclick = ()=> {
     showNewBlock(guestionChipsNo,workout_01Screen);
     timer_workout_01.innerHTML = `<span id="min" data-min="0">${localStorage.getItem('min')}</span>:<span id="sec" data-sec="0">${localStorage.getItem('sec')}</span>`;
     video_workout_01.pause();
-    console.log (video_workout_01.currentTime)
     video_workout_01.currentTime = 0;
 }
 
@@ -157,10 +168,11 @@ showTimerAndBtn_01.onclick = ()=> {
 }
 
 bntRelaxWorkout_01.onclick = ()=> {
-    showNewBlock(relaxBlock,workout_01Screen);
+    timer_relax_workout_01.innerHTML = '<span id="min_relax">00</span>:<span id="sec_relax">30</span>';
     video_workout_01.pause();
     clearTimeout(timerId);
     timerRelax();
+    showNewBlock(relaxBlock,workout_01Screen);
 }
 function timerRelax() {
 
@@ -168,7 +180,6 @@ function timerRelax() {
 
     function addValueRelax() {
         seconds_R--;
-        console.log(seconds_R)
             if (seconds_R == 1) {
                 seconds_R = 30;
                 clearTimeout(timerIdRelax);
@@ -192,12 +203,10 @@ function timerRelax() {
     }
 
 }
-btnBackWorkout_01_2.addEventListener('click', ()=>backToWorkoutBegin_01());
-btnBackWorkout_01_3.addEventListener('click', ()=>backToWorkoutBegin_01());
-btnBackWorkout_01_4.addEventListener('click', ()=>backToWorkoutBegin_01());
-btnBackWorkout_01_4.addEventListener('click', ()=>showNewBlock(workout_01Screen,finalScreen));
+backToWorkoutFromEnd.addEventListener('click', ()=>backToWorkoutBegin_01());
 
 function backToWorkoutBegin_01() {
+    video_workout_01.currentTime = 0;
     timer_workout_01.innerHTML = `<span id="min" data-min="0">${localStorage.getItem('min')}</span>:<span id="sec" data-sec="0">${localStorage.getItem('sec')}</span>`;
     showNewBlock(workout_01Screen,blockEndWorkout_01);
     video_workout_01.play();
@@ -205,3 +214,39 @@ function backToWorkoutBegin_01() {
     seconds = Math.floor(video_workout_01.duration % 60);
     timer();
 }
+
+
+$(function() {
+    $( "#datepicker" ).datepicker();
+});
+
+$( "#datepicker" ).datepicker({
+    dateFormat: 'dd MM yy', 
+    defaultDate: 0,
+    changeMonth: true,
+    changeYear: true,
+    yearRange: "1980:2010",
+    autoPick: false
+});
+
+
+$.datepicker.regional['ru'] = {
+    closeText: 'Закрыть',
+    prevText: '&#x3c;Пред',
+    nextText: 'След&#x3e;',
+    currentText: 'Сегодня',
+    monthNames: ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня',
+    'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'],
+    monthNamesShort: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+    'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+    dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+    dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+    dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+    weekHeader: 'Нед',
+    dateFormat: 'dd.mm.yy',
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: ''
+};
+$.datepicker.setDefaults($.datepicker.regional['ru']);

@@ -2,7 +2,7 @@
 @import "workout_02";
 
 .wrapp {
-    max-width: 375px;
+    width: 100%;
     height: auto;
     .content {
         width: 100%;
@@ -55,9 +55,6 @@
                 }
                 button:focus  {
                     outline: none;
-                }
-                button:hover {
-                    background-color: @color0pink;
                 }
             }
         }
@@ -148,12 +145,7 @@
                         background-repeat: no-repeat;
                         background-position: center top;
                     }
-                    .radio label:hover:before {
-                        filter: brightness(120%);
-                    }
-                    .radio input[type=radio]:disabled + label:before {
-                        filter: grayscale(100%);
-                    }
+
                     .cal {
                         display: inline-block;
                         width: 100%;
@@ -173,6 +165,15 @@
                     }
                     .cal:focus {
                         outline: none;
+                    }
+                    .cal::placeholder {
+                        font-family: Gotham Pro;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #3C134A;
+                        padding: 8px 14px 8px 11px;
                     }
                 }
             }
@@ -219,9 +220,6 @@
                 button:focus  {
                     outline: none;
                 }
-                button:hover {
-                    background-color: @color0pink;
-                }
             }    
         }
         .trainings-screen {
@@ -241,10 +239,9 @@
                     width: 100%;
                     height: 72px;
                     display: flex;
-                    justify-content: space-around;
-                    align-items: center;
+                    justify-content: space-between;
                     .text {
-                        padding-left: 20px;
+                        padding: 44px 0 0 20px;
                         width: 280px;
                     }
                     .libr {
@@ -254,12 +251,12 @@
                         background-position: center center;
                         background-size: contain;
                         background-repeat: no-repeat;
-                        padding-right: 20px;
+                        margin: 44px  20px 0 0;
                     }
-
                 }
                 .swiper-container {
-                    width: 375px;
+                    margin-top: 18px;
+                    width: 100%;
                 }
                 .swiper-wrapper {
                     width: 750px;
@@ -336,12 +333,11 @@
                 background-image: url(../images/screen3/1.png);
                 background-repeat: no-repeat;
                 background-position: center top;
-                background-size: contain;
+                background-size: cover;
                 &-btn {
-                    width: 325px;
+                    width: 100%;
                     height: 32px;
-                    margin: 0 auto;
-                    padding-top: 35px;
+                    padding-top: 44px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -355,26 +351,19 @@
                         background-size: 10%;
                         cursor: pointer;
                         transition: 0.5s;
+                        margin-left: 20px;
                         p {
-                            font-family: Gotham Pro;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 14px;
-                            line-height: 32px;
-                            display: flex;
-                            align-items: center;
-                            color: #FFFFFF;
-                            position: relative;
-                            right: -23px;
+                            .block-content-top-left-p();
                         }
                     }
                     &__right {
                         width: 33px;
                         height: 33px;
+                        margin-right: 20px;
                         background-image: url(../images/screen3/library.png);
                         background-repeat: no-repeat;
                         background-position: center center;
-                        background-size: contain;
+                        background-size: cover;
                         cursor: pointer;
                         transition: 0.5s;
                     }
@@ -385,7 +374,7 @@
                 &-table {
                     width: 300px;
                     height: 35px;
-                    margin: 0 50px auto 18px;
+                    margin: 0 50px auto 20px;
                     table {
                         text-align: left;
                         tr {
@@ -396,7 +385,7 @@
                             line-height: 120%;
                             color: #FFFFFF;
                             th:nth-child(odd) {
-                                padding: 0 20px;
+                                padding: 0 12px;
                             }
                             th:nth-child(even) {
                                 padding: 0;
@@ -470,7 +459,7 @@
                     }
                 }
                 .btn {
-                    width: 375px;
+                    width: 100%;
                     height: 108px;
                     background-image: url(../images/screen3/bottom.png);
                     background-position: right bottom;
@@ -528,10 +517,11 @@
                     }
                 }
             }
+            
         }
         .guestionChips-screen {
             .block-content-parent();
-            background: url(../images/guestionChips/1.png) no-repeat center top;
+            background: url(../images/guestionChips/DSCF0827\ 1.png) no-repeat center top;
             background-size: cover;
             .content {
                 .block-content();
@@ -540,7 +530,7 @@
                     &__left {
                         .block-content-top-left(); 
                         p {
-                            .block-content-top-left-p();
+                        .block-content-top-left-p();
                         }
                     }
                     &__right {
@@ -549,22 +539,30 @@
                 }
                 .bg {
                     width: 100%;
-                    height: 60%;
+                    height: 380px;
                     position: absolute;
                     left: 0;
                     bottom: 0;
+                    background-size: cover;
+                    background-image: url(../images/guestionChips/Intersect.png);
                 }
                 &-text {
                     h3 {
                         .block-question-content-text-h3();
                         bottom: 110px;
+                        height: 115px;
                     }
                 }
                 &-btn {
                     .block-question-content-btn();
                     button {
-                        margin: 0 7px;
                         .btn-pink-small();
+                    }
+                    button:first-child {
+                        margin-left: 20px;
+                    }
+                    button:last-child {
+                        margin-right: 20px;
                     }
                 }
             }    
@@ -639,8 +637,10 @@
                 position: relative;
                 video {
                     display: block;
-                    width: 375px;
-                    height: 100%;
+                    min-width: 100%;
+                    min-height: 100%;
+                    width: auto;
+                    height: auto;
                 }
                 .showTimerAndBtn {
                     background-color: transparent;
@@ -659,13 +659,11 @@
                     left: 0;
                     z-index: 10;
                     .btn {
-                        width: 325px;
+                        width: 100%;
                         height: 32px;
-                        margin: 0 auto;
-                        padding-top: 35px;
+                        padding-top: 44px;
                         display: flex;
                         justify-content: space-between;
-                        align-items: center;
                         flex-wrap: nowrap;
                         &-left {
                             width: 67px;
@@ -676,6 +674,7 @@
                             background-size: 10%;
                             cursor: pointer;
                             transition: 0.5s;
+                            margin-left: 20px;
                             p {
                                 font-family: Gotham Pro;
                                 font-style: normal;
@@ -698,6 +697,7 @@
                             background-size: contain;
                             cursor: pointer;
                             transition: 0.5s;
+                            margin-right: 20px;
                         }
                     }
                 }
@@ -770,13 +770,11 @@
                     background-size: contain;
                     position: relative;
                     .btn {
-                        width: 325px;
+                        width: 100%;
                         height: 32px;
-                        margin: 0 auto;
-                        padding-top: 35px;
+                        padding-top: 44px;
                         display: flex;
                         justify-content: space-between;
-                        align-items: center;
                         flex-wrap: nowrap;
                         &-left {
                             width: 67px;
@@ -787,6 +785,7 @@
                             background-size: 10%;
                             cursor: pointer;
                             transition: 0.5s;
+                            margin-left: 20px;
                             p {
                                 font-family: Gotham Pro;
                                 font-style: normal;
@@ -809,6 +808,7 @@
                             background-size: contain;
                             cursor: pointer;
                             transition: 0.5s;
+                            margin-right: 20px;
                         }
                     }
                 }
@@ -933,4 +933,47 @@
             }
         }
     }
+}
+#ui-datepicker-div {
+    width: 100% !important;
+    left: 0 !important;
+    height: 300px !important;
+    border: none !important;
+    bottom: 0 !important;
+    top: 355px !important;
+}
+
+.ui-datepicker-calendar {
+    background-color: #fff !important;
+    width: 90%;
+    margin: 0 auto !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    height: 30px !important;
+    background: none !important;
+    border: none !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none !important;
+    background: #fff !important;
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    color: #3C134A;
+    background-color: #FFFFFF !important;
+}    
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    padding: 5px 0 !important;
+    border: none !important;
+    color: #3C134A;
+    background-color: #FFFFFF !important;
 }

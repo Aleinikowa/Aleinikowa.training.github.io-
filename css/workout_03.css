@@ -63,7 +63,7 @@ h5 {
   position: relative;
   opacity: 0;
   transition-duration: 0;
-  background: url(../images/workout_03/1.png) no-repeat center top;
+  background: url(../images/workout_03/DSCF0827\ 1.png) no-repeat center top;
   background-size: cover;
   opacity: 1;
 }
@@ -73,10 +73,9 @@ h5 {
   position: relative;
 }
 .wrapp .content .guestion-screen .content-top {
-  width: 325px;
+  width: 100%;
   height: 32px;
-  margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 44px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,6 +91,7 @@ h5 {
   background-size: 10%;
   cursor: pointer;
   transition: 0.5s;
+  margin-left: 20px;
 }
 .wrapp .content .guestion-screen .content-top__left p {
   font-family: Gotham Pro;
@@ -111,16 +111,19 @@ h5 {
   background-image: url(../images/screen3/library.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   cursor: pointer;
   transition: 0.5s;
+  margin-right: 20px;
 }
 .wrapp .content .guestion-screen .content .bg {
   width: 100%;
-  height: 60%;
+  height: 380px;
   position: absolute;
   left: 0;
   bottom: 0;
+  background-size: cover;
+  background-image: url(../images/workout_03/Intersect3.png);
 }
 .wrapp .content .guestion-screen .content-text h3 {
   left: 0;
@@ -135,11 +138,10 @@ h5 {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .wrapp .content .guestion-screen .content-btn button {
-  margin: 0 7px;
   width: 160px;
   height: 60px;
   background: #FF6394;
@@ -152,6 +154,12 @@ h5 {
   line-height: 120%;
   color: #FFFFFF;
   border: none;
+}
+.wrapp .content .guestion-screen .content-btn button:first-child {
+  margin-left: 20px;
+}
+.wrapp .content .guestion-screen .content-btn button:last-child {
+  margin-right: 20px;
 }
 .wrapp .content .guestion-screen .content a {
   display: flex;
@@ -185,10 +193,9 @@ h5 {
   background-size: cover;
 }
 .wrapp .content .answer-screen .content-top .btn {
-  width: 325px;
+  width: 100%;
   height: 32px;
-  margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 44px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -204,6 +211,7 @@ h5 {
   background-size: 10%;
   cursor: pointer;
   transition: 0.5s;
+  margin-left: 20px;
 }
 .wrapp .content .answer-screen .content-top .btn-left p {
   font-family: Gotham Pro;
@@ -223,9 +231,10 @@ h5 {
   background-image: url(../images/screen3/library.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   cursor: pointer;
   transition: 0.5s;
+  margin-right: 20px;
 }
 .wrapp .content .answer-screen .content-top .header {
   position: absolute;

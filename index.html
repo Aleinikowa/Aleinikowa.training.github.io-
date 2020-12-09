@@ -2,13 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+    <meta name="viewport" content="target-densitydpi=device-dpi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
     <title>Document</title>    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapp">
@@ -31,7 +35,7 @@
                             <input name="sex" id="sex_women" type="radio" value="women" checked><label for="sex_women" id="women">Женский</label>
                         </p>
                         <p class="text">Дата рождения</p>
-                        <input class="cal" type="date" name="calendar">
+                        <input class="cal" placeholder="02 января 1981" type="text" id="datepicker">
                     </div>
                 </div>
                 <div class="btn-bg"></div>
@@ -196,7 +200,7 @@
                 <div class="content">
                     <div class="content-top">
                         <div class="btn">
-                            <div class="btn-left back-workout_01"><p>Назад</p></div>
+                            <div class="btn-left" id="backToWorkoutFromRelax"><p>Назад</p></div>
                             <div class="btn-right"></div>
                         </div>
                     </div>    
@@ -214,7 +218,7 @@
                 <div class="content">
                     <div class="content-top">
                         <div class="btn">
-                            <div class="btn-left back-workout_01"><p>Назад</p></div>
+                            <div class="btn-left" id="backToWorkoutFromEnd"><p>Назад</p></div>
                             <div class="btn-right"></div>
                         </div>
                     </div>    
@@ -250,26 +254,7 @@
         </div>
     </div>
     <script type="module" src="js/main.js"></script>
-
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        let swiper = new Swiper('.swiper-container', {
-            spaceBetween: 0,
-            width: 900,
-            loop: false,
-            freeMode: false,
-            slidesPerView: 3,
-            spaceBetween: 30,
-            centeredSlidesBounds: true,
-            slidesPerGroup : 1,
-            watchSlidesProgress: true,      
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        centeredSlides: false,
-        });
-    </script>
 </body>
 </html>

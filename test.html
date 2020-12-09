@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
     <title>Test</title>    
+    <link rel="stylesheet" href="./transfonter.org-20201209-141618/stylesheet.css">
     <link rel="stylesheet" href="css/test.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -30,18 +31,18 @@
                     </div>
                 </div>
             </div>
-            <div class="question-screen fadeOut">
-                <div class="top">
-                    <div class="top-btn">
-                        <div class="top-btn__left backToTestScreen">
-                            <p>Назад</p>
-                        </div>
-                        <div class="top-btn__right">
-                        </div>
-                    </div>
-                    <h3 class="top-text">Поделитесь своим<br>мнением</h3>
-                </div>
+            <div class="question-screen1 fadeOut">
                 <div class="content">
+                    <div class="top">
+                        <div class="top-btn">
+                            <div class="top-btn__left backToTestScreen">
+                                <p>Назад</p>
+                            </div>
+                            <div class="top-btn__right">
+                            </div>
+                        </div>
+                        <h3 class="top-text">Поделитесь своим<br>мнением</h3>
+                    </div>
                     <div class="text">
                         <div class="text-number">
                             <p>Вопрос 1 из 10</p>
@@ -76,14 +77,107 @@
                                 </p>
                             </div>
                         </div>
-                        
                     </div>
-                    <div class="btn">
+                    <div class="btn btn_01">
                         <div class="btn-left backToTestScreen">
                             <p>Назад</p>
                         </div>
-                        <div class="btn-right goToNextQuestion">
-                            <p id="textBtn">Поехали!</p>
+                        <div class="btn-right">
+                            <button class="btn-right" id="goToQuestion_02" disabled> Ответить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question-screen2 fadeOut">
+                <div class="content">
+                    <div class="top">
+                        <div class="top-btn">
+                            <div class="top-btn__left backToQuestion_01">
+                                <p>Назад</p>
+                            </div>
+                            <div class="top-btn__right">
+                            </div>
+                        </div>
+                        <h3 class="top-text">Поделитесь своим<br>мнением</h3>
+                    </div>
+                    <div class="text">
+                        <div class="text-number">
+                            <p>Вопрос 2 из 10</p>
+                        </div>
+                        <div class="text-header">
+                            <p>Была ли достигнута ваша цель?</p>
+                        </div>
+                        <div class="text-list">
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_2" class="question2" name="question2" id="first_02" type="radio" value="Да"><label for="first_02">Да</label>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_2" class="question2"  name="question2" id="second_02" type="radio" value="Нет"><label for="second_02">Нет</label>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_2" class="question2"  name="question2" id="third_02" type="radio" value="Частично"><label for="third_02">Частично</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn_02">
+                        <div class="btn-left backToQuestion_01_bottom">
+                            <p>Назад</p>
+                        </div>
+                        <div class="btn-right">
+                            <button class="btn-right" id="goToQuestion_03" disabled>Ответить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="question-screen3 fadeOut">
+                <div class="content">
+                    <div class="top">
+                        <div class="top-btn">
+                            <div class="top-btn__left backToQuestion_02">
+                                <p>Назад</p>
+                            </div>
+                            <div class="top-btn__right">
+                            </div>
+                        </div>
+                        <h3 class="top-text">Поделитесь своим<br>мнением</h3>
+                    </div>
+                    <div class="text">
+                        <div class="text-number">
+                            <p>Вопрос 3 из 10</p>
+                        </div>
+                        <div class="text-header">
+                            <p>Заметили ли вы, что ваши мышцы<br>стали крепче?</p>
+                        </div>
+                        <div class="text-list">
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_3" class="question3" name="question3" id="first_03" type="radio" value="Да"><label for="first_03">Да</label>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_3" class="question3"  name="question3" id="second_03" type="radio" value="Нет"><label for="second_03">Нет</label>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <p class="radio">
+                                    <input data-key="q_3" class="question3"  name="question3" id="third_03" type="radio" value="Частично"><label for="third_03">Затрудняюсь ответить</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn_03">
+                        <div class="btn-left backToQuestion_02_bottom">
+                            <p>Назад</p>
+                        </div>
+                        <div class="btn-right">
+                            <button class="btn-right" id="goToQuestion_04" disabled>Ответить</button>
                         </div>
                     </div>
                 </div>

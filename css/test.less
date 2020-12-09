@@ -4,7 +4,7 @@
     .content {
         .test-screen {
             .block-content-parent();
-            background-image: url(../images/test/1.png);
+            background-image: url(../images/test/DSCF0827\ 1@2x.png);
             background-size: cover;
             opacity: 1;
             .content {
@@ -16,10 +16,21 @@
                         p {
                             .block-content-top-left-p();
                         }
+
                     }
                     &__right {
                         .block-content-top-right(); 
                     }
+                }
+                .bg {
+                    width: 100%;
+                    height: 480px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-size: cover;
+                    background-position-x: right;
+                    background-image: url(../images/test/IntersectT.png);
                 }
                 &-text {
                     h3 {
@@ -42,81 +53,40 @@
                 &-btn {
                     .block-question-content-btn();
                     button {
-                        margin: 0 7px;
                         .btn-pink-small();
                         width: 335px !important;
+                    }
+                    button:first-child {
+                        margin-left: 20px;
+                    }
+                    button:last-child {
+                        margin-right: 20px;
                     }
                 }
             }
         }
-        .question-screen {
-            width: 100%;
-            height: 100vh;
-            background-size: cover;
-            overflow-y: scroll
-            .back();
-            position: relative;
-            opacity: 0;
-            transition-duration: 0;
-            .top {
-                width: 100%;
-                height: 135px;
-                background-image: url(../images/test/Group\ 46.png);
-                background-repeat: no-repeat;
-                background-position: center top;
-                background-size: cover;
-                position: relative;
-                &-btn {
-                    width: 325px;
-                    height: 32px;
-                    margin: 0 auto;
-                    padding-top: 35px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: nowrap;
-                    &__left {
-                        width: 67px;
-                        height: 32px;
-                        background-image: url(../images/screen3/right-arrow\ 2.png);
-                        background-repeat: no-repeat;
-                        background-position: 0 center;
-                        background-size: 10%;
-                        cursor: pointer;
-                        transition: 0.5s;
-                        p {
-                            font-family: Gotham Pro;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 14px;
-                            line-height: 32px;
-                            display: flex;
-                            align-items: center;
-                            color: #FFFFFF;
-                            position: relative;
-                            right: -23px;
+        .question-screen1, .question-screen2, .question-screen3 {
+            .question-screen();
+            .content {
+                .question-screen-content(); 
+                .top {
+                    .question-screen-content-top();
+                    &-btn {
+                        .question-screen-content-top-btn();
+                        &__left {
+                            .question-screen-content-top-btn_left();
+                            p {
+                                .question-screen-content-top-btn_left-p()
+                            }
+                        }
+                        &__right {
+                            .question-screen-content-top-btn_right();
                         }
                     }
-                    &__right {
-                        width: 33px;
-                        height: 33px;
-                        background-image: url(../images/screen3/library.png);
-                        background-repeat: no-repeat;
-                        background-position: center center;
-                        background-size: contain;
-                        cursor: pointer;
-                        transition: 0.5s;
+                    &-text {
+                        .question-screen-content-top-text();
                     }
                 }
-                &-text {
-                    position: absolute;
-                    bottom: 10px;
-                    left: 20px;
-                }
-            }
-            .content {
-                width: 100%;
-                height: auto;
                 .text {
                     &-number {
                         margin: 24px 0 5px;
@@ -190,25 +160,29 @@
                     }
                 }
                 .btn {
-                    width: 375px;
+                    width: 100%;
                     height: 108px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
                     background-image: url(../images/test/bottom.png);
                     background-position: right bottom;
                     background-size: contain;
                     background-repeat: no-repeat;
                     display: flex;
                     justify-content: space-between;
-                    align-items: center;
                     flex-wrap: nowrap;
+                    align-items: center;
                     &-left {
                         width: 67px;
                         height: 32px;
                         background-image: url(../images/screen3/Vector.png);
                         background-repeat: no-repeat;
-                        background-position: 10% center;
+                        background-position: 10% 46%;
                         background-size: 10%;
                         cursor: pointer;
                         transition: 0.5s;
+                        margin-left: 20px;
                         margin-left: 20px;
                         p {
                             font-family: Gotham Pro;
@@ -226,16 +200,15 @@
                     }
                     &-right {
                         width: 233px;
-                        height: inherit;
-                        background-image: url(../images/test/forward.png);
+                        height: 108px;
                         background-repeat: no-repeat;
                         cursor: pointer;
                         transition: 0.5s;
                         position: relative;
-                        background-size: 25%;
-                        background-position-x: 160px;
-                        background-position-y: center;
-                        p {
+                        button {
+                            width: 233px;
+                            height: 108px;
+                            background-image: url(../images/test/forward.png);
                             font-family: Gotham Pro;
                             font-style: normal;
                             font-weight: bold;
@@ -243,12 +216,16 @@
                             line-height: 120%;
                             color: #999999;
                             position: absolute;
-                            right: 90px;
-                            top: 40px;
+                            border: none;
+                            padding-right: 70px;
+                            background-position: 156px 25px;
+                            background-color: transparent;
                         }
                     }
                 }
             }
+                
+            
         }    
 
         button:focus {
@@ -273,7 +250,7 @@
 }
 
 .back-color {
-    background-image: url(../images/screen3/bottom.png) !important;
+    background-image: url(../images/screen3/bottom.png)  !important;
 }
 
 .btn-color {
