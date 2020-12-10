@@ -179,7 +179,14 @@ h5 {
 }
 .wrapp .content .question-screen1,
 .wrapp .content .question-screen2,
-.wrapp .content .question-screen3 {
+.wrapp .content .question-screen3,
+.wrapp .content .question-screen4,
+.wrapp .content .question-screen5,
+.wrapp .content .question-screen6,
+.wrapp .content .question-screen7,
+.wrapp .content .question-screen8,
+.wrapp .content .question-screen9,
+.wrapp .content .question-screen10 {
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
@@ -191,14 +198,28 @@ h5 {
 }
 .wrapp .content .question-screen1 .content,
 .wrapp .content .question-screen2 .content,
-.wrapp .content .question-screen3 .content {
+.wrapp .content .question-screen3 .content,
+.wrapp .content .question-screen4 .content,
+.wrapp .content .question-screen5 .content,
+.wrapp .content .question-screen6 .content,
+.wrapp .content .question-screen7 .content,
+.wrapp .content .question-screen8 .content,
+.wrapp .content .question-screen9 .content,
+.wrapp .content .question-screen10 .content {
   width: 100%;
   height: 100%;
   position: relative;
 }
 .wrapp .content .question-screen1 .content .top,
 .wrapp .content .question-screen2 .content .top,
-.wrapp .content .question-screen3 .content .top {
+.wrapp .content .question-screen3 .content .top,
+.wrapp .content .question-screen4 .content .top,
+.wrapp .content .question-screen5 .content .top,
+.wrapp .content .question-screen6 .content .top,
+.wrapp .content .question-screen7 .content .top,
+.wrapp .content .question-screen8 .content .top,
+.wrapp .content .question-screen9 .content .top,
+.wrapp .content .question-screen10 .content .top {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -209,7 +230,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .top-btn,
 .wrapp .content .question-screen2 .content .top-btn,
-.wrapp .content .question-screen3 .content .top-btn {
+.wrapp .content .question-screen3 .content .top-btn,
+.wrapp .content .question-screen4 .content .top-btn,
+.wrapp .content .question-screen5 .content .top-btn,
+.wrapp .content .question-screen6 .content .top-btn,
+.wrapp .content .question-screen7 .content .top-btn,
+.wrapp .content .question-screen8 .content .top-btn,
+.wrapp .content .question-screen9 .content .top-btn,
+.wrapp .content .question-screen10 .content .top-btn {
   width: 100%;
   height: 32px;
   padding-top: 35px;
@@ -220,7 +248,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .top-btn__left,
 .wrapp .content .question-screen2 .content .top-btn__left,
-.wrapp .content .question-screen3 .content .top-btn__left {
+.wrapp .content .question-screen3 .content .top-btn__left,
+.wrapp .content .question-screen4 .content .top-btn__left,
+.wrapp .content .question-screen5 .content .top-btn__left,
+.wrapp .content .question-screen6 .content .top-btn__left,
+.wrapp .content .question-screen7 .content .top-btn__left,
+.wrapp .content .question-screen8 .content .top-btn__left,
+.wrapp .content .question-screen9 .content .top-btn__left,
+.wrapp .content .question-screen10 .content .top-btn__left {
   width: 67px;
   height: 32px;
   background-image: url(../images/screen3/right-arrow\ 2.png);
@@ -233,7 +268,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .top-btn__left p,
 .wrapp .content .question-screen2 .content .top-btn__left p,
-.wrapp .content .question-screen3 .content .top-btn__left p {
+.wrapp .content .question-screen3 .content .top-btn__left p,
+.wrapp .content .question-screen4 .content .top-btn__left p,
+.wrapp .content .question-screen5 .content .top-btn__left p,
+.wrapp .content .question-screen6 .content .top-btn__left p,
+.wrapp .content .question-screen7 .content .top-btn__left p,
+.wrapp .content .question-screen8 .content .top-btn__left p,
+.wrapp .content .question-screen9 .content .top-btn__left p,
+.wrapp .content .question-screen10 .content .top-btn__left p {
   font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
@@ -247,7 +289,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .top-btn__right,
 .wrapp .content .question-screen2 .content .top-btn__right,
-.wrapp .content .question-screen3 .content .top-btn__right {
+.wrapp .content .question-screen3 .content .top-btn__right,
+.wrapp .content .question-screen4 .content .top-btn__right,
+.wrapp .content .question-screen5 .content .top-btn__right,
+.wrapp .content .question-screen6 .content .top-btn__right,
+.wrapp .content .question-screen7 .content .top-btn__right,
+.wrapp .content .question-screen8 .content .top-btn__right,
+.wrapp .content .question-screen9 .content .top-btn__right,
+.wrapp .content .question-screen10 .content .top-btn__right {
   width: 33px;
   height: 33px;
   background-image: url(../images/screen3/library.png);
@@ -260,25 +309,53 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .top-text,
 .wrapp .content .question-screen2 .content .top-text,
-.wrapp .content .question-screen3 .content .top-text {
+.wrapp .content .question-screen3 .content .top-text,
+.wrapp .content .question-screen4 .content .top-text,
+.wrapp .content .question-screen5 .content .top-text,
+.wrapp .content .question-screen6 .content .top-text,
+.wrapp .content .question-screen7 .content .top-text,
+.wrapp .content .question-screen8 .content .top-text,
+.wrapp .content .question-screen9 .content .top-text,
+.wrapp .content .question-screen10 .content .top-text {
   position: absolute;
   bottom: 10px;
   left: 20px;
 }
 .wrapp .content .question-screen1 .content .text-number,
 .wrapp .content .question-screen2 .content .text-number,
-.wrapp .content .question-screen3 .content .text-number {
+.wrapp .content .question-screen3 .content .text-number,
+.wrapp .content .question-screen4 .content .text-number,
+.wrapp .content .question-screen5 .content .text-number,
+.wrapp .content .question-screen6 .content .text-number,
+.wrapp .content .question-screen7 .content .text-number,
+.wrapp .content .question-screen8 .content .text-number,
+.wrapp .content .question-screen9 .content .text-number,
+.wrapp .content .question-screen10 .content .text-number {
   margin: 24px 0 5px;
   padding: 0 20px;
 }
 .wrapp .content .question-screen1 .content .text-header,
 .wrapp .content .question-screen2 .content .text-header,
-.wrapp .content .question-screen3 .content .text-header {
+.wrapp .content .question-screen3 .content .text-header,
+.wrapp .content .question-screen4 .content .text-header,
+.wrapp .content .question-screen5 .content .text-header,
+.wrapp .content .question-screen6 .content .text-header,
+.wrapp .content .question-screen7 .content .text-header,
+.wrapp .content .question-screen8 .content .text-header,
+.wrapp .content .question-screen9 .content .text-header,
+.wrapp .content .question-screen10 .content .text-header {
   padding: 0 20px 24px;
 }
 .wrapp .content .question-screen1 .content .text-header p,
 .wrapp .content .question-screen2 .content .text-header p,
-.wrapp .content .question-screen3 .content .text-header p {
+.wrapp .content .question-screen3 .content .text-header p,
+.wrapp .content .question-screen4 .content .text-header p,
+.wrapp .content .question-screen5 .content .text-header p,
+.wrapp .content .question-screen6 .content .text-header p,
+.wrapp .content .question-screen7 .content .text-header p,
+.wrapp .content .question-screen8 .content .text-header p,
+.wrapp .content .question-screen9 .content .text-header p,
+.wrapp .content .question-screen10 .content .text-header p {
   font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
@@ -288,7 +365,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .text-list,
 .wrapp .content .question-screen2 .content .text-list,
-.wrapp .content .question-screen3 .content .text-list {
+.wrapp .content .question-screen3 .content .text-list,
+.wrapp .content .question-screen4 .content .text-list,
+.wrapp .content .question-screen5 .content .text-list,
+.wrapp .content .question-screen6 .content .text-list,
+.wrapp .content .question-screen7 .content .text-list,
+.wrapp .content .question-screen8 .content .text-list,
+.wrapp .content .question-screen9 .content .text-list,
+.wrapp .content .question-screen10 .content .text-list {
   padding: 0 20px 75px;
   display: flex;
   flex-direction: column;
@@ -298,7 +382,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .text-list .radio,
 .wrapp .content .question-screen2 .content .text-list .radio,
-.wrapp .content .question-screen3 .content .text-list .radio {
+.wrapp .content .question-screen3 .content .text-list .radio,
+.wrapp .content .question-screen4 .content .text-list .radio,
+.wrapp .content .question-screen5 .content .text-list .radio,
+.wrapp .content .question-screen6 .content .text-list .radio,
+.wrapp .content .question-screen7 .content .text-list .radio,
+.wrapp .content .question-screen8 .content .text-list .radio,
+.wrapp .content .question-screen9 .content .text-list .radio,
+.wrapp .content .question-screen10 .content .text-list .radio {
   font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
@@ -309,12 +400,26 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .text-list .radio input[type=radio],
 .wrapp .content .question-screen2 .content .text-list .radio input[type=radio],
-.wrapp .content .question-screen3 .content .text-list .radio input[type=radio] {
+.wrapp .content .question-screen3 .content .text-list .radio input[type=radio],
+.wrapp .content .question-screen4 .content .text-list .radio input[type=radio],
+.wrapp .content .question-screen5 .content .text-list .radio input[type=radio],
+.wrapp .content .question-screen6 .content .text-list .radio input[type=radio],
+.wrapp .content .question-screen7 .content .text-list .radio input[type=radio],
+.wrapp .content .question-screen8 .content .text-list .radio input[type=radio],
+.wrapp .content .question-screen9 .content .text-list .radio input[type=radio],
+.wrapp .content .question-screen10 .content .text-list .radio input[type=radio] {
   display: none;
 }
 .wrapp .content .question-screen1 .content .text-list .radio label,
 .wrapp .content .question-screen2 .content .text-list .radio label,
-.wrapp .content .question-screen3 .content .text-list .radio label {
+.wrapp .content .question-screen3 .content .text-list .radio label,
+.wrapp .content .question-screen4 .content .text-list .radio label,
+.wrapp .content .question-screen5 .content .text-list .radio label,
+.wrapp .content .question-screen6 .content .text-list .radio label,
+.wrapp .content .question-screen7 .content .text-list .radio label,
+.wrapp .content .question-screen8 .content .text-list .radio label,
+.wrapp .content .question-screen9 .content .text-list .radio label,
+.wrapp .content .question-screen10 .content .text-list .radio label {
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -325,7 +430,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .text-list .radio label:before,
 .wrapp .content .question-screen2 .content .text-list .radio label:before,
-.wrapp .content .question-screen3 .content .text-list .radio label:before {
+.wrapp .content .question-screen3 .content .text-list .radio label:before,
+.wrapp .content .question-screen4 .content .text-list .radio label:before,
+.wrapp .content .question-screen5 .content .text-list .radio label:before,
+.wrapp .content .question-screen6 .content .text-list .radio label:before,
+.wrapp .content .question-screen7 .content .text-list .radio label:before,
+.wrapp .content .question-screen8 .content .text-list .radio label:before,
+.wrapp .content .question-screen9 .content .text-list .radio label:before,
+.wrapp .content .question-screen10 .content .text-list .radio label:before {
   content: "";
   display: inline-block;
   width: 25px;
@@ -340,7 +452,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .text-list .radio input[type=radio]:checked + label:before,
 .wrapp .content .question-screen2 .content .text-list .radio input[type=radio]:checked + label:before,
-.wrapp .content .question-screen3 .content .text-list .radio input[type=radio]:checked + label:before {
+.wrapp .content .question-screen3 .content .text-list .radio input[type=radio]:checked + label:before,
+.wrapp .content .question-screen4 .content .text-list .radio input[type=radio]:checked + label:before,
+.wrapp .content .question-screen5 .content .text-list .radio input[type=radio]:checked + label:before,
+.wrapp .content .question-screen6 .content .text-list .radio input[type=radio]:checked + label:before,
+.wrapp .content .question-screen7 .content .text-list .radio input[type=radio]:checked + label:before,
+.wrapp .content .question-screen8 .content .text-list .radio input[type=radio]:checked + label:before,
+.wrapp .content .question-screen9 .content .text-list .radio input[type=radio]:checked + label:before,
+.wrapp .content .question-screen10 .content .text-list .radio input[type=radio]:checked + label:before {
   background: url(../images/test/on.png);
   background-size: 130%;
   background-repeat: no-repeat;
@@ -348,17 +467,310 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .text-list .radio label:hover:before,
 .wrapp .content .question-screen2 .content .text-list .radio label:hover:before,
-.wrapp .content .question-screen3 .content .text-list .radio label:hover:before {
+.wrapp .content .question-screen3 .content .text-list .radio label:hover:before,
+.wrapp .content .question-screen4 .content .text-list .radio label:hover:before,
+.wrapp .content .question-screen5 .content .text-list .radio label:hover:before,
+.wrapp .content .question-screen6 .content .text-list .radio label:hover:before,
+.wrapp .content .question-screen7 .content .text-list .radio label:hover:before,
+.wrapp .content .question-screen8 .content .text-list .radio label:hover:before,
+.wrapp .content .question-screen9 .content .text-list .radio label:hover:before,
+.wrapp .content .question-screen10 .content .text-list .radio label:hover:before {
   filter: brightness(120%);
 }
 .wrapp .content .question-screen1 .content .text-list .radio input[type=radio]:disabled + label:before,
 .wrapp .content .question-screen2 .content .text-list .radio input[type=radio]:disabled + label:before,
-.wrapp .content .question-screen3 .content .text-list .radio input[type=radio]:disabled + label:before {
+.wrapp .content .question-screen3 .content .text-list .radio input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen4 .content .text-list .radio input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen5 .content .text-list .radio input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen6 .content .text-list .radio input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen7 .content .text-list .radio input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen8 .content .text-list .radio input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen9 .content .text-list .radio input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen10 .content .text-list .radio input[type=radio]:disabled + label:before {
+  filter: grayscale(100%);
+}
+.wrapp .content .question-screen1 .content .text-list #text_08,
+.wrapp .content .question-screen2 .content .text-list #text_08,
+.wrapp .content .question-screen3 .content .text-list #text_08,
+.wrapp .content .question-screen4 .content .text-list #text_08,
+.wrapp .content .question-screen5 .content .text-list #text_08,
+.wrapp .content .question-screen6 .content .text-list #text_08,
+.wrapp .content .question-screen7 .content .text-list #text_08,
+.wrapp .content .question-screen8 .content .text-list #text_08,
+.wrapp .content .question-screen9 .content .text-list #text_08,
+.wrapp .content .question-screen10 .content .text-list #text_08,
+.wrapp .content .question-screen1 .content .text-list #text_09,
+.wrapp .content .question-screen2 .content .text-list #text_09,
+.wrapp .content .question-screen3 .content .text-list #text_09,
+.wrapp .content .question-screen4 .content .text-list #text_09,
+.wrapp .content .question-screen5 .content .text-list #text_09,
+.wrapp .content .question-screen6 .content .text-list #text_09,
+.wrapp .content .question-screen7 .content .text-list #text_09,
+.wrapp .content .question-screen8 .content .text-list #text_09,
+.wrapp .content .question-screen9 .content .text-list #text_09,
+.wrapp .content .question-screen10 .content .text-list #text_09 {
+  width: 335px;
+  height: 40px;
+  border: 1px solid #3C134A;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 8px;
+}
+.wrapp .content .question-screen1 .content .text-list #text_08::placeholder,
+.wrapp .content .question-screen2 .content .text-list #text_08::placeholder,
+.wrapp .content .question-screen3 .content .text-list #text_08::placeholder,
+.wrapp .content .question-screen4 .content .text-list #text_08::placeholder,
+.wrapp .content .question-screen5 .content .text-list #text_08::placeholder,
+.wrapp .content .question-screen6 .content .text-list #text_08::placeholder,
+.wrapp .content .question-screen7 .content .text-list #text_08::placeholder,
+.wrapp .content .question-screen8 .content .text-list #text_08::placeholder,
+.wrapp .content .question-screen9 .content .text-list #text_08::placeholder,
+.wrapp .content .question-screen10 .content .text-list #text_08::placeholder,
+.wrapp .content .question-screen1 .content .text-list #text_09::placeholder,
+.wrapp .content .question-screen2 .content .text-list #text_09::placeholder,
+.wrapp .content .question-screen3 .content .text-list #text_09::placeholder,
+.wrapp .content .question-screen4 .content .text-list #text_09::placeholder,
+.wrapp .content .question-screen5 .content .text-list #text_09::placeholder,
+.wrapp .content .question-screen6 .content .text-list #text_09::placeholder,
+.wrapp .content .question-screen7 .content .text-list #text_09::placeholder,
+.wrapp .content .question-screen8 .content .text-list #text_09::placeholder,
+.wrapp .content .question-screen9 .content .text-list #text_09::placeholder,
+.wrapp .content .question-screen10 .content .text-list #text_09::placeholder {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+.wrapp .content .question-screen1 .content .text-list #text_08:focus,
+.wrapp .content .question-screen2 .content .text-list #text_08:focus,
+.wrapp .content .question-screen3 .content .text-list #text_08:focus,
+.wrapp .content .question-screen4 .content .text-list #text_08:focus,
+.wrapp .content .question-screen5 .content .text-list #text_08:focus,
+.wrapp .content .question-screen6 .content .text-list #text_08:focus,
+.wrapp .content .question-screen7 .content .text-list #text_08:focus,
+.wrapp .content .question-screen8 .content .text-list #text_08:focus,
+.wrapp .content .question-screen9 .content .text-list #text_08:focus,
+.wrapp .content .question-screen10 .content .text-list #text_08:focus,
+.wrapp .content .question-screen1 .content .text-list #text_09:focus,
+.wrapp .content .question-screen2 .content .text-list #text_09:focus,
+.wrapp .content .question-screen3 .content .text-list #text_09:focus,
+.wrapp .content .question-screen4 .content .text-list #text_09:focus,
+.wrapp .content .question-screen5 .content .text-list #text_09:focus,
+.wrapp .content .question-screen6 .content .text-list #text_09:focus,
+.wrapp .content .question-screen7 .content .text-list #text_09:focus,
+.wrapp .content .question-screen8 .content .text-list #text_09:focus,
+.wrapp .content .question-screen9 .content .text-list #text_09:focus,
+.wrapp .content .question-screen10 .content .text-list #text_09:focus {
+  outline: none;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10,
+.wrapp .content .question-screen2 .content .text .text-list_10,
+.wrapp .content .question-screen3 .content .text .text-list_10,
+.wrapp .content .question-screen4 .content .text .text-list_10,
+.wrapp .content .question-screen5 .content .text .text-list_10,
+.wrapp .content .question-screen6 .content .text .text-list_10,
+.wrapp .content .question-screen7 .content .text .text-list_10,
+.wrapp .content .question-screen8 .content .text .text-list_10,
+.wrapp .content .question-screen9 .content .text .text-list_10,
+.wrapp .content .question-screen10 .content .text .text-list_10 {
+  display: flex;
+  position: relative;
+  z-index: 10;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 335px;
+  height: 40px;
+  border: 1px solid #3C134A;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3B2D40;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 .item,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 .item,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 .item,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 .item,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 .item,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 .item,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 .item,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 .item,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 .item,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 .item {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: aquamarine;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 input[type=radio],
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 input[type=radio],
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 input[type=radio],
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 input[type=radio],
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 input[type=radio],
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 input[type=radio],
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 input[type=radio],
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 input[type=radio],
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 input[type=radio],
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 input[type=radio] {
+  display: none;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 label,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 label,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 label,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 label,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 label,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 label,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 label,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 label,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 label,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 18px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 label:before,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 label:before,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 label:before,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 label:before,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 label:before,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 label:before,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 label:before,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 label:before,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 label:before,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 label:before {
+  content: "";
+  display: inline-block;
+  width: 75px;
+  height: 90px;
+  position: absolute;
+  left: -10px;
+  bottom: -23px;
+  color: #FFFFFF;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 .item:last-child label:last-child:before,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 .item:last-child label:last-child:before,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 .item:last-child label:last-child:before,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 .item:last-child label:last-child:before,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 .item:last-child label:last-child:before,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 .item:last-child label:last-child:before,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 .item:last-child label:last-child:before,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 .item:last-child label:last-child:before,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 .item:last-child label:last-child:before,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 .item:last-child label:last-child:before {
+  left: -4px !important;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 input[type=radio]:checked + #last,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 input[type=radio]:checked + #last,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 input[type=radio]:checked + #last,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 input[type=radio]:checked + #last,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 input[type=radio]:checked + #last,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 input[type=radio]:checked + #last,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 input[type=radio]:checked + #last,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 input[type=radio]:checked + #last,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 input[type=radio]:checked + #last,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 input[type=radio]:checked + #last {
+  padding-left: 12px;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label:before,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label:before,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label:before,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label:before,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label:before,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label:before,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label:before,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label:before,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label:before,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label:before {
+  background: url(../images/test/Ellipse\ 2.png);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: -10;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 input[type=radio]:checked + label {
+  color: #FFFFFF;
+  z-index: 10;
+  font-size: 30px;
+  padding: 10px -1px;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 input:last-child[type=radio]:checked + label:last-child,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 input:last-child[type=radio]:checked + label:last-child,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 input:last-child[type=radio]:checked + label:last-child,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 input:last-child[type=radio]:checked + label:last-child,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 input:last-child[type=radio]:checked + label:last-child,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 input:last-child[type=radio]:checked + label:last-child,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 input:last-child[type=radio]:checked + label:last-child,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 input:last-child[type=radio]:checked + label:last-child,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 input:last-child[type=radio]:checked + label:last-child,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 input:last-child[type=radio]:checked + label:last-child {
+  color: #FFFFFF;
+  z-index: 10;
+  font-size: 30px;
+  padding: 10px 17px;
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 label:hover:before,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 label:hover:before,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 label:hover:before,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 label:hover:before,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 label:hover:before,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 label:hover:before,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 label:hover:before,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 label:hover:before,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 label:hover:before,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 label:hover:before {
+  filter: brightness(120%);
+}
+.wrapp .content .question-screen1 .content .text .text-list_10 .radio_10 input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen2 .content .text .text-list_10 .radio_10 input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen3 .content .text .text-list_10 .radio_10 input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen4 .content .text .text-list_10 .radio_10 input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen5 .content .text .text-list_10 .radio_10 input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen6 .content .text .text-list_10 .radio_10 input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen7 .content .text .text-list_10 .radio_10 input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen8 .content .text .text-list_10 .radio_10 input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen9 .content .text .text-list_10 .radio_10 input[type=radio]:disabled + label:before,
+.wrapp .content .question-screen10 .content .text .text-list_10 .radio_10 input[type=radio]:disabled + label:before {
   filter: grayscale(100%);
 }
 .wrapp .content .question-screen1 .content .btn,
 .wrapp .content .question-screen2 .content .btn,
-.wrapp .content .question-screen3 .content .btn {
+.wrapp .content .question-screen3 .content .btn,
+.wrapp .content .question-screen4 .content .btn,
+.wrapp .content .question-screen5 .content .btn,
+.wrapp .content .question-screen6 .content .btn,
+.wrapp .content .question-screen7 .content .btn,
+.wrapp .content .question-screen8 .content .btn,
+.wrapp .content .question-screen9 .content .btn,
+.wrapp .content .question-screen10 .content .btn {
   width: 100%;
   height: 108px;
   position: absolute;
@@ -375,7 +787,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .btn-left,
 .wrapp .content .question-screen2 .content .btn-left,
-.wrapp .content .question-screen3 .content .btn-left {
+.wrapp .content .question-screen3 .content .btn-left,
+.wrapp .content .question-screen4 .content .btn-left,
+.wrapp .content .question-screen5 .content .btn-left,
+.wrapp .content .question-screen6 .content .btn-left,
+.wrapp .content .question-screen7 .content .btn-left,
+.wrapp .content .question-screen8 .content .btn-left,
+.wrapp .content .question-screen9 .content .btn-left,
+.wrapp .content .question-screen10 .content .btn-left {
   width: 67px;
   height: 32px;
   background-image: url(../images/screen3/Vector.png);
@@ -388,7 +807,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .btn-left p,
 .wrapp .content .question-screen2 .content .btn-left p,
-.wrapp .content .question-screen3 .content .btn-left p {
+.wrapp .content .question-screen3 .content .btn-left p,
+.wrapp .content .question-screen4 .content .btn-left p,
+.wrapp .content .question-screen5 .content .btn-left p,
+.wrapp .content .question-screen6 .content .btn-left p,
+.wrapp .content .question-screen7 .content .btn-left p,
+.wrapp .content .question-screen8 .content .btn-left p,
+.wrapp .content .question-screen9 .content .btn-left p,
+.wrapp .content .question-screen10 .content .btn-left p {
   font-family: Gotham Pro;
   font-style: normal;
   font-weight: normal;
@@ -403,7 +829,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .btn-right,
 .wrapp .content .question-screen2 .content .btn-right,
-.wrapp .content .question-screen3 .content .btn-right {
+.wrapp .content .question-screen3 .content .btn-right,
+.wrapp .content .question-screen4 .content .btn-right,
+.wrapp .content .question-screen5 .content .btn-right,
+.wrapp .content .question-screen6 .content .btn-right,
+.wrapp .content .question-screen7 .content .btn-right,
+.wrapp .content .question-screen8 .content .btn-right,
+.wrapp .content .question-screen9 .content .btn-right,
+.wrapp .content .question-screen10 .content .btn-right {
   width: 233px;
   height: 108px;
   background-repeat: no-repeat;
@@ -413,7 +846,14 @@ h5 {
 }
 .wrapp .content .question-screen1 .content .btn-right button,
 .wrapp .content .question-screen2 .content .btn-right button,
-.wrapp .content .question-screen3 .content .btn-right button {
+.wrapp .content .question-screen3 .content .btn-right button,
+.wrapp .content .question-screen4 .content .btn-right button,
+.wrapp .content .question-screen5 .content .btn-right button,
+.wrapp .content .question-screen6 .content .btn-right button,
+.wrapp .content .question-screen7 .content .btn-right button,
+.wrapp .content .question-screen8 .content .btn-right button,
+.wrapp .content .question-screen9 .content .btn-right button,
+.wrapp .content .question-screen10 .content .btn-right button {
   width: 233px;
   height: 108px;
   background-image: url(../images/test/forward.png);
@@ -428,6 +868,140 @@ h5 {
   padding-right: 70px;
   background-position: 156px 25px;
   background-color: transparent;
+}
+.wrapp .content .question-screen10 .content .btn-main {
+  width: 335px;
+  height: 60px;
+  background: #3C134A;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  border: none;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin: 0 auto;
+  background: gray;
+}
+.wrapp .content .test-screen-end {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 0;
+  transition-duration: 0;
+  background-image: url(../images/test-end/1.png);
+  background-size: cover;
+  opacity: 1;
+}
+.wrapp .content .test-screen-end .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrapp .content .test-screen-end .content-top {
+  width: 100%;
+  height: 32px;
+  padding-top: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+.wrapp .content .test-screen-end .content-top__left {
+  width: 67px;
+  height: 32px;
+  background-image: url(../images/screen3/right-arrow\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 20px;
+}
+.wrapp .content .test-screen-end .content-top__left p {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+  right: -23px;
+  -webkit-tap-highlight-color: transparent;
+}
+.wrapp .content .test-screen-end .content-top__right {
+  width: 33px;
+  height: 33px;
+  background-image: url(../images/screen3/library.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 20px;
+}
+.wrapp .content .test-screen-end .content-text h3 {
+  left: 0;
+  padding: 0 0 0 20px;
+  position: absolute;
+}
+.wrapp .content .test-screen-end .content-text h3:nth-child(1) {
+  bottom: 267px !important;
+}
+.wrapp .content .test-screen-end .content-text h3:nth-child(3) {
+  bottom: 120px !important;
+}
+.wrapp .content .test-screen-end .content-text p {
+  position: absolute;
+  bottom: 190px;
+  left: 0;
+  padding: 0 0 0 20px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FBFBFB;
+}
+.wrapp .content .test-screen-end .content-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapp .content .test-screen-end .content-btn a {
+  margin: 0 auto;
+  width: 160px;
+  height: 60px;
+  background: #FF6394;
+  box-shadow: 0px 10px 20px 10px rgba(197, 35, 86, 0.1);
+  border-radius: 10px;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  border: none;
+  width: 335px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
 }
 .wrapp .content button:focus {
   outline: none;
@@ -447,4 +1021,8 @@ h5 {
 }
 .text-color {
   color: #3C134A !important;
+}
+.main-btn-color {
+  background: #3C134A !important;
+  color: #FFFFFF !important;
 }
