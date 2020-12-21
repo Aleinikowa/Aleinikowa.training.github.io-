@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">    
+    <title>page_5</title>    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+</head>
+<body>
+    <div class="wrapp">
+        <div class="content">
+            <div class="workout_01-screen">
+                <div class="content">
+                    <div class="content-top">
+                        <div class="btn">
+                            <div class="btn-left back-guestionChipsNo"><a href="./page_4.html">Назад</a></div>
+                            <div class="btn-right"></div>
+                        </div>
+                    </div>
+                    <video id="video_workout_01">
+                        <source src="./video/2.mp4" type="video/webm" codecs="vp8, vorbis">
+                    </video>
+                    <div class="showTimerAndBtn"></div>
+                    <div class="content-timer fadeOut" id="timerWorkout_01">
+                        <p id="timer_workout_01"><span id="min" data-min="0">00</span>:<span id="sec" data-sec="0">00</span></p>
+                    </div>
+                    <div class="content-stop fadeOut" id="btnWorkout_01">
+                        <button id="bnt-relax_workout_01">Я устал</button>
+                    </div>
+                </div>
+            </div>
+            <div class="relax-screen fadeOut">
+                <div class="content">
+                    <div class="content-top">
+                        <div class="btn">
+                            <div class="btn-left" id="backToWorkoutFromRelax"><p>Назад</p></div>
+                            <div class="btn-right"></div>
+                        </div>
+                    </div>    
+                    <div class="content-timer">
+                        <p id="timer_relax_workout_01"><span id="min_relax">00</span>:<span id="sec_relax">30</span></p>                    </div>
+                    <div class="content-text">
+                        <p>Отдохните!</p>
+                    </div>
+                    <div class="content-btn">
+                        <button id="btn-backToWorkout_01">Продолжить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="end-workout-screen fadeOut">
+                <div class="content">
+                    <div class="content-top">
+                        <div class="btn">
+                            <div class="btn-left" id="backToWorkoutFromEnd"><p>Назад</p></div>
+                            <div class="btn-right"></div>
+                        </div>
+                    </div>    
+                    <div class="content-timer">
+                        <p>00:00</p>
+                    </div>
+                    <div class="content-text">
+                        <p>Поехали дальше!</p>
+                    </div>
+                    <div class="content-btn">
+                        <a href="./workout_02.html" id="endWorkout_01">Продолжить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/page_5.js"></script>
+</body>
+</html>

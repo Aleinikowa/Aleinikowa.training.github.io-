@@ -1,21 +1,11 @@
-import { showNewBlock } from './general.js';
-
 let guestionWorkout_05Yes = document.getElementById('guestionWorkout_05Yes'),
-    guestionWorkout_05No = document.getElementById('guestionWorkout_05No'),
-    guestionScreen = document.getElementsByClassName('guestion-screen')[0],
-    backToQuestionScreen = document.getElementById('backToQuestionScreen'),
-    answerText = document.getElementById('answerText'),
-    answerScreen = document.getElementsByClassName('answer-screen')[0];
+guestionWorkout_05No = document.getElementById('guestionWorkout_05No');
 
-guestionWorkout_05Yes.onclick = ()=> {
-    answerText.innerHTML = 'А вот и нет!';
-    showNewBlock(answerScreen,guestionScreen);
+    guestionWorkout_05Yes.onclick = ()=> {
+    localStorage.setItem('htmlBlockW_5','А вот и нет!<span>В настоящее время существует множественное множество диет.<span>');
 }
 
 guestionWorkout_05No.onclick = ()=> {
-    answerText.innerHTML = 'Абсолютно верно!';
-    showNewBlock(answerScreen,guestionScreen);
+    localStorage.setItem('htmlBlockW_5', 'Вы правы!<span>В настоящее время существует множество диет.</span>');
 }
-
-backToQuestionScreen.addEventListener('click', ()=>showNewBlock(guestionScreen,answerScreen));
 

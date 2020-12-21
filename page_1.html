@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">    
+    <title>page_2</title>    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+</head>
+<body>
+    <div class="wrapp">
+        <div class="content">
+            <div class="trainings-screen">
+                <div class="content">
+                    <div class="content-traing">
+                        <div class="text">
+                            <h2>Тренировки</h2>
+                        </div>
+                        <div class="libr"></div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img-one" id="btnBlockFunctionalTraing">
+                                    <div class="name-traning">
+                                        <p>Приветствие</p>
+                                        <h5>Что такое<br>функциональная<br>тренировка, для чего<br>она нужна?</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-two"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-thrird"></div>
+                            </div>
+                            <div class="swiper-slide">
+                            </div>
+                            <div class="swiper-slide"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>     
+    <script type="text/javascript" src="js/page_1.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper('.swiper-container', {
+            spaceBetween: 0,
+            width: 750,
+            loop: false,
+            freeMode: false,
+            slidesPerView: 3,
+            spaceBetween: 25,
+            centeredSlidesBounds: true,
+            slidesPerGroup : 1,
+            watchSlidesProgress: true,      
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            centeredSlides: false,
+        });
+    </script>
+</body>
+</html>
